@@ -1,0 +1,1577 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="stylesheet" type="text/css" href="./css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="./css/pink.css">
+
+    <!--Live Style Switcher--><!--RAJNISH KUMAR (Dreamer)-->
+    <link rel="stylesheet" class="alternate-style" title="blue" type="text/css" href="./css/blue.css" disabled>
+    <link rel="stylesheet"  class="alternate-style" title="green" type="text/css" href="./css/green.css" disabled>
+    <link rel="stylesheet"  class="alternate-style" title="orange" type="text/css" href="./css/orange.css" disabled>
+    <link rel="stylesheet"  class="alternate-style" title="yellow" type="text/css" href="./css/yellow.css" disabled>
+    <link rel="stylesheet"  class="alternate-style" title="pink" type="text/css" href="./css/pink.css">
+    <link rel="stylesheet" type="text/css" href="./css/styleSwitcher.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>i_eh_dreamer</title>
+    <script>
+        var bleep = new Audio();
+        bleep.src = "./audio/bleep.mp3";
+    </script>
+    <script>
+        var button = new Audio();
+        button.src = "./audio/button-19.mp3";
+    </script>
+    <script>
+        var whistle = new Audio();
+        whistle.src = "./audio/whistle.mp3";
+    </script>
+        <style type="text/css">
+            *{
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+            .table-container{
+                padding: 0 10%;
+                margin: 40px auto 0;
+            }
+            .heading{
+                font-size: 40px;
+                text-align: center;
+                color: #f1f1f1;
+                margin-bottom: 40px;
+            }
+            .table{
+                width: 100%;
+                border-collapse: collapse;
+            }
+            .table thead{
+                background-color: #ee2828;
+            }
+            .table thead tr th{
+                font-size: 14px;
+                font-weight: medium;
+                letter-spacing: 0.35px;
+                color: #FFFFFF;
+                opacity: 1;
+                padding: 12px;
+                vertical-align: top;
+                border: 1px solid #dee2e685;
+            }
+            .table tbody tr td{
+                font-size: 14px;
+                letter-spacing: 0.35px;
+                font-weight: normal;
+                color: #f1f1f1;
+                background-color: #3c3f44;
+                padding: 8px;
+                text-align: center;
+                border: 1px solid #dee2e685;
+            }
+            .table tbody tr td .btn{
+                width: 130px;
+                text-decoration: none;
+                line-height: 35px;
+            /*    display: block;*/
+                background-color: #ff1046;
+                font-weight: medium;
+                color: #FFFFFF;
+                text-align: center;
+                vertical-align: middle;
+                user-select: none;
+                border: 1px solid transparent;
+                font-size: 14px;
+                opacity: 1;
+            }
+    
+    @media (max-width: 768px){
+        .table thread{
+            display: none;
+        }
+        .table, .table tbody,.table tr,.table td{
+            display: block;
+            width: 100%;
+        }
+        .table tr{
+            margin-bottom: 15px;
+        }
+        .table tbody tr td{
+            text-align: right;
+            padding-left: 50%;
+            position: relative;
+        }
+        .table td:before{
+            content: attr(data-label);
+            position: absolute;
+            left: 0;
+            width: 50%;
+            padding-left: 15px;
+            font-weight: 600;
+            font-size: 14px;
+            text-align: left;
+        }
+    }
+    
+        </style>
+</head>
+<body>
+    <!--PreLoader-->
+    <div class="preloader">
+        <div class="loader">
+
+        </div>
+    </div>
+    <!--Preloader End-->
+<!--Main Container-->
+<div class="main-container">
+    <!--Aside-->
+    <div class="aside">
+        <!--Logo-->
+        <div class="logo">
+            <a href="#">DREAMER</a>
+        </div>
+        <!--Nav Toggler Button-->
+        <div class="nav-toggler" onclick="bleep.play()">
+            <span></span>
+        </div>
+        <!--NAV-->
+        <ul class="nav">
+            <li><a href="#home" onmouseover="bleep.play()" class="active"><i class="fa fa-home"></i> Home</a></li>
+            <li><a href="#about" onmouseover="bleep.play()"><i class="fa fa-user"></i> About</a></li>
+            <li><a href="#services" onmouseover="bleep.play()"><i class="fa fa-list"></i> Achievements</a></li>
+            <li><a href="#portfolio" onmouseover="bleep.play()"><i class="fa fa-briefcase"></i> Certificates</a></li>
+            <li><a href="#contents" onmouseover="bleep.play()"><i class="fa fa-briefcase"></i> Contents</a></li>
+            <li><a href="#contact" onmouseover="bleep.play()"><i class="fa fa-comments"></i> Contact</a></li>
+        </ul>
+        <!--Copyright-->
+        <div class="copyright-text">
+            &copy; RAJNISH KUMAR (C|EH, eWPTXv2)
+        </div>
+    </div>
+    <!--Aside End-->
+    <!--Main Content-->
+    <div class="main-content">
+        <!--Home Section-->
+        <section class="home section active" id="home"> 
+            <div class="container">
+                <div class="intro">
+                    <img src="./images/rj.png" alt="profile" class="shadow-dark">
+                    <h1>RAJNISH KUMAR (Dreamer)</h1>
+                    <p>~ i_eh_dreamer</p><br>
+                    <p><strong>CERTIFIED ETHICAL HACKER (C|EH-Pratical) | CERTIFIED <a href="https://verified.elearnsecurity.com/certificates/e686a32a-a68f-4f81-ad4f-df3fb8c0b917">eWPTXv2</a></strong></p><br>
+                    <p><strong>ETHICAL HACKER | SECURITY RESEARCHER | CYBER CRIME INVESTIGATOR</strong></p><br>
+                    <p>CYBER SECURITY ANALYST & RED TEAM SPECIALIST (OFFSHORE TEAM LEAD) AT CYBERARCH, ESTONIA</p><br /><hr /><br />
+                    <p><strong>FOLLOW <i>@i_eh_dreamer</i> ON SOCIAL MEDIA</strong></p>
+                    <div class="social-link">
+                        <a href="https://twitter.com/i_eh_dreamer/" onmouseover="bleep.play()" target="_blank"><i class="fa fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/i_eh_dreamer/" onmouseover="bleep.play()" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://github.com/dreamer1eh/"><i class="fa fa-github" onmouseover="bleep.play()" target="_blank"></i></a>
+                        <a href="https://www.linkedin.com/in/rajnish-kumar-eh/" onmouseover="bleep.play()" target="_blank"><i class="fa fa-linkedin"></i></a>
+                        <a href="https://www.youtube.com/iehdreamer/" onmouseover="bleep.play()" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Home Section End-->
+        <!--About Section-->
+        <section class="about section" id="about">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>About Me</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="about-content padd-15">
+                        <div class="row">
+                            <div class="about-text padd-15">
+                                <h3>Hi, I'm Rajnish Kumar,<span> Cybersecurity Analyst & Red Team Specialist,</span></h3>
+                                <p>My name is Rajnish Kumar, graduated in B.TECH in C.S.E., highly passionate about Cyber Security, VAPT, Red Teaming, Cyber Crime Investigations. I have been working as a Cyber Security Analyst and Red Team Specialist for 1 year. Skilled in Linux, Windows, Network Security, Web Application Security, Social Engineering etc. I have acquired the necessary skills and knowledge to secure your domain.</p>
+                            </div>
+                        </div>
+                         <div class="row">
+                             <div class="personal-info padd-15">
+                                <div class="row">
+                                    <div class="info-item padd-15">
+                                        <p>E-mail : <span><a href="mailto:rajnishkr9354@gmail.com"><b>rajnishkr9354@gmail.com</b></a></span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                        <p>Youtube : <span><b><a href="https://www.youtube.com/iehdreamer" target="_blank">i_eh_dreamer</a></b></span></p>
+                                    </div>                                    
+                                    <div class="info-item padd-15">
+                                        <p>Course : <span>Bachelor In Technology (B.TECH)</span></p>
+                                    </div>
+                                    <div class="info-item padd-15">
+                                       <p>Branch : <span>Computer Science & Engineering (C.S.E.)</span></p>
+                                   </div>
+                                  
+                                   <div class="info-item padd-15">
+                                       <p>Work : <span>Cyberarch Consulting, Estonia (Full-Time)</span></p>
+                                   </div>
+                                   
+                                   <div class="info-item padd-15">
+                                       <p>Role : <span>Cyber Security Analyst & Red Team Specialist</span></p>
+                                   </div>
+                                   <div class="info-item padd-15">
+                                       <p>City : <span>New Delhi</span></p>
+                                   </div>
+                                   <div class="info-item padd-15">
+                                       <p>State w/ Country : <span>Delhi, India</span></p>
+                                   </div>
+                                </div>
+                                <div class="row">
+                                    <div class="buttons padd-15">
+                                        <a href="mailto:rajnishkr9354+dreamereh.ml@gmail.com" target="_blank" class="btn" onclick="button.play()">ASK FOR RESUME</a>
+                                    <!--    <a href="mailto: rajnishkr9354@gmail.com" class="btn">Hire Me Via Mail</a>-->
+                                    </div>
+                                </div>
+                             </div>
+                             <div class="skills padd-15">
+                             <div class="row">
+                                 <div class="skill-item padd-15">
+                                     <h5>Vulnerability Assessment</h5>
+                                     <div class="progress">
+                                         <div class="progress-in" style="width: 100%"></div>
+                                         <div class="skill-percent">100%</div>
+                                     </div>
+                                 </div>
+                                 <div class="skill-item padd-15">
+                                    <h5>Network Pentesting</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 95%"></div>
+                                        <div class="skill-percent">95%</div>
+                                    </div>
+                                </div>                                
+                                 <div class="skill-item padd-15">
+                                    <h5>WebApp Pentesting</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 90%"></div>
+                                        <div class="skill-percent">90%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item padd-15">
+                                    <h5>Social Engineering</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 95%"></div>
+                                        <div class="skill-percent">95%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item padd-15">
+                                    <h5>Linux & Windows Administration</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 80%"></div>
+                                        <div class="skill-percent">80%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item padd-15">
+                                    <h5>Networking</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 90%"></div>
+                                        <div class="skill-percent">90%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item padd-15">
+                                    <h5>Open-Source Intelligence</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 90%"></div>
+                                        <div class="skill-percent">90%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item padd-15">
+                                    <h5>Digital Forensics</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 60%"></div>
+                                        <div class="skill-percent">60%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item padd-15">
+                                    <h5>Web Development (Front-End)</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 90%"></div>
+                                        <div class="skill-percent">90%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item padd-15">
+                                    <h5>Web Hosting (Google Cloud, AWS, Microsoft Azure)</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 75%"></div>
+                                        <div class="skill-percent">75%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item padd-15">
+                                    <h5>Bash Scripting</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 90%"></div>
+                                        <div class="skill-percent">90%</div>
+                                    </div>
+                                </div>
+                                <div class="skill-item padd-15">
+                                    <h5>Python Programming</h5>
+                                    <div class="progress">
+                                        <div class="progress-in" style="width: 90%"></div>
+                                        <div class="skill-percent">90%</div>
+                                    </div>
+                                </div>
+                               
+                             </div>
+                          </div>
+                         </div>
+
+                         <div class="row">
+                            <div class="education padd-15">
+                                <h3 class="title">Education & Qualifications</h3>
+                                <div class="row">
+                                    <div class="timeline-box padd-15">
+                                    <div class="timeline shadow-dark">
+                                        <!--Timeline Item-->
+                                        <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                            <h6 class="timeline-date"><i class="fa fa-calendar"></i>2018 - 2022</h6>
+                                            <h4 class="timeline-title">B.Tech in Computer Science & Engineering</h4>
+                                            <p class="timeline-text"><strong><i>2022 | B.Tech in C.S.E. | <a href="https://mdu.ac.in/" target="_blank">MDU, Rohtak</a></i></strong></p>
+                                            <p class="timeline-text">Completed my graduation in B-Tech in Computer Science & Engineering from <strong><a href="https://saitm.ac.in/" target="_blank">St. Andrews Institute of Technology & Management, Gurgaon (SAITM, Gurgaon)</a>.</strong></p>
+                                        </div>
+                                        <!--TTimeline-item-end-->
+                                        <div class="timeline-item">
+                                            <div class="circle-dot"></div>
+                                                <h6 class="timeline-date"><i class="fa fa-calendar"></i>2016-2017</h6>
+                                                <h4 class="timeline-title">Higher Secondary Examination (Class - 12th)</h4>
+                                                <p class="timeline-text"><strong><i>2017 | PCM | C.B.S.E.</i></strong></p>
+                                                <p class="timeline-text">I had completed my 12th grade in PCM from <strong><a href="https://moderninternationalschool.com" target="_blank">Modern International School, Delhi</a></strong> through <strong>C.B.S.E. Board.</strong></p>
+                                            </div>
+                                            <!--TTimeline-item-end-->
+                                        <div class="timeline-item">
+                                            <div class="circle-dot"></div>
+                                                <h6 class="timeline-date"><i class="fa fa-calendar"></i>2014-2015</h6>
+                                                <h4 class="timeline-title">Secondary School Certificate (Class - 10th) </h4>
+                                                <p class="timeline-text"><strong><i>2015 | C.B.S.E.</i></strong></p>
+                                                <p class="timeline-text">I had completed my secondary schooling from <strong><a href="https://www.sunshineschoolindia.com/" target="_blank">Sunshine Prep./High School, Delhi</a></strong> through <strong>C.B.S.E. Board.</strong></p>
+                                                <p class="timeline-text">..</p>
+                                                <p class="timeline-text">  ..</p>
+                                            </div><!--RAJNISH KUMAR (Dreamer)-->
+                                            <!--TTimeline-item-end-->                
+                                        </div>
+                                    </div> 
+                                </div> 
+                                </div>
+                            
+                            <div class="experience padd-15">
+                                <h3 class="title">Experience</h3>
+                                <div class="row">
+                                    <div class="timeline-box padd-15">
+                                    <div class="timeline shadow-dark">
+                                        <!--Timeline Item-->
+                                        <div class="timeline-item">
+                                        <div class="circle-dot"></div>
+                                            <h6 class="timeline-date"><i class="fa fa-calendar"></i>January (2022) - Present</h6>
+                                            <h4 class="timeline-title">Cybersecurity Analyst | Red Team Specialist | Off-Shore Team Lead</h4>
+                                            <p class="timeline-text"><STRONG><a href="https://cyberarch.eu/">CYBERARCH CONSULTING, ESTONIA</a></STRONG></p>
+                                            <p class="timeline-text"><b>Job Role :</b></p>
+                                            <p class="timeline-text">➢ Perform White Box & Black Box Testing.</p>
+                                            <p class="timeline-text">➢ Perform VA & PT on Network, Systems, Web Applications & Social Engineering.</p>
+                                            <p class="timeline-text">➢ Project Documentation and Framework Documentation.</p>
+                                            <p class="timeline-text">➢ Automation & Manual Testing Report Making.</p>
+                                            <p class="timeline-text">➢ Created Automation Testing Environment Using Custom Self Made Scripts.</p>
+                                            <p class="timeline-text">➢ Daily Meetings & Reportings.</p>
+                                            <p class="timeline-text">➢ Creating Test Plan, Writing Test Cases, Performing the Manual Test.</p>
+                                            <p class="timeline-text">➢ Working as a Team Lead.</p>
+                                        </div>
+                                        <!--TTimeline-item-end-->
+                                        <div class="timeline-item">
+                                            <div class="circle-dot"></div>
+                                                <h6 class="timeline-date"><i class="fa fa-calendar"></i>August (2021) - March (2022) | 8 Months</h6>
+                                                <h4 class="timeline-title">Head Coordinator at Crime Free Bharat</h4>
+                                                <p class="timeline-text"><STRONG><a href="#">MSG's CRIME FREE BHARAT, MP, INDIA</a></STRONG></p>
+                                                <p class="timeline-text"><b>Job Role :</b></p>
+                                                <p class="timeline-text">➢ Internship Management under supervison of <b><a href="https://www.facebook.com/IndiaBookofRecords/photos/a.10150184652605623/10165695350465623/?type=3">India Book Of Record Holder Mr. Bhupesa Kumar Pallai</a></b></p>
+                                                <p class="timeline-text">➢ Head Coordinator & Mentor of Cybersecurity Department</p>
+                                                <p class="timeline-text">➢ Head Coordinator & Mentor of Web Security & Testing Department</p>
+                                                <p class="timeline-text">➢ Head Coordinator & Mentor of Threat Intelligence Department and worked on several cyber crime cases under National Threat Intelligence Response Team</p>
+                                                <p class="timeline-text">➢ Head Coordinator & Mentor of Web Development Department</p>
+                                                <p class="timeline-text">➢ Internship Report Making</p>
+                                            </div>
+                                        </div>
+                                            <!--TTimeline-item-end-->
+                                    </div> 
+                                </div> 
+                                   
+                            </div>                                           
+                            
+                         </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--About Section End-->
+
+        <!--Service Section-->
+       <section class="service section" id="services"> 
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>My Achievements</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    
+                    <div class="table-container">
+                        <h1 class="heading" color="red">Achievements Table</h1>
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th>ORGANIZATION</th>
+                                    <th>REWARD TYPE</th>
+                                    <th>LINK</th>
+                                    <th>DESCRIPTION</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td data-label="Site Name">MICROSOFT</td>
+                                    <td data-label="Reward">HALL OF FAME</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://msrc.microsoft.com/update-guide/en-us/acknowledgement/online" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="description">HTML INJECTION(x2)<BR>(HOF MONTH - NOVEMBER 2022)</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">ADOBE</td>
+                                    <td data-label="Reward">HALL OF FAME & HACKERONE THANKS</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://helpx.adobe.com/security/acknowledgements.html" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="description">DOM-XSS(x2) & HTML INJECTION(x2) (HOF REGION - US)</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">HITACHI VANTARA</td>
+                                    <td data-label="Reward">HALL OF FAME, APPRECIATION LETTER & GIFT CARD</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://youtu.be/evDsE1pySbc" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">POC-Link</a></td>
+                                    <td data-label="description">FOUND COMPLETE WEB NETWORK EXPOSED ON SHODAN & HAVING DOM-XSS</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">HACKTOBERFEST 2022</td>
+                                    <td data-label="Reward">BADGES & SWAGS</td>
+                                    <td data-label="Site Name"><a target="_blank" href="#" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="description">HACKTOBERFEST CODING</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">BINOMO</td>
+                                    <td data-label="Reward">BOUNTY 50$</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/rajnish-kumar-eh_bugbounty-xss-activity-6974018949269045250-7Nf7" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="description">CLICKJACKING</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">UNIVERSITY OF COLOGNE</td>
+                                    <td data-label="Reward">CERTIFICATE OF APPRECIATION</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/rajnish-kumar-eh_securitymatters-bughunting-bugs-activity-6999365054500335616-5-6E" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="description">XSS VIA PROTOTYPE POLLUTION #BUG REPORT-2</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">VMware</td>
+                                    <td data-label="Reward">No Reward</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/rajnish-kumar-eh_securitymatters-bughunting-bugs-activity-6999365054500335616-5-6E" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="description">6 REPORTS, NO REWARD FOR LOW SEVERITY HTML INJECTION</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">JETBRAINS</td>
+                                    <td data-label="Reward">No Reward</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/rajnish-kumar-eh_securitymatters-bughunting-bugs-activity-6999365054500335616-5-6E" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="description">NO REWARD FOR LOW SEVERITY HTML INJECTION</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">MINISTRY OF INFRASTRUCTURE/MARITIME ECONOMY, <b>GOVT. OF POLAND</b></td>
+                                    <td data-label="Reward">LETTER OF APPRECIATION</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/rajnish-kumar-eh_poland-govt-appreciation-letter-activity-6975066232756580352-Q4Pc/" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="description">CROSS SITE SCRIPTING (DOM-XSS)</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">UNIVERSITY OF COLOGNE, GERMANY</td>
+                                    <td data-label="Reward">CERTIFICATE OF APPRECIATION</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/rajnish-kumar-eh_certificate-rajnish-kumar-dreamer-uoc-activity-6976103581296832512-aG-h/" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="description">CROSS SITE SCRIPTING (DOM-XSS)</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">EUROPEAN BIOINFORMATICS INSTITUTE (EMBL-EBI)</td>
+                                    <td data-label="Reward">HALL OF FAME</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.ebi.ac.uk/security/hall-of-fame/#:~:text=Rajnish%20Kumar%20(Dreamer)" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="description">CROSS SITE SCRIPTING (DOM-XSS)</td>
+                                </tr><!--RAJNISH KUMAR (Dreamer)-->
+                                <tr>
+                                    <td data-label="Site Name">N45HT</td>
+                                    <td data-label="Reward">HALL OF FAME</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://hackerone.com/n45ht/thanks" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="description">Thanks For Bussiness Login Error Bug Reports</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">NCIIPC INDIA</td>
+                                    <td data-label="Reward">ACKNOWLEDGEMENTS</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/rajnish-kumar-eh_bugreports-india-nation-activity-6863388824836411392-lfe4" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="description">Acknowledgements For Reporting Various Bugs On Indian Govt. Web Sites</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">CERT-IN INDIA</td>
+                                    <td data-label="Reward">ACKNOWLEDGEMENTS</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/rajnish-kumar-eh_govtsite-bugreport-bughunting-activity-6963364318407012352-6Ogd" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="description">Acknowledgements For Reporting Various Incidents & Bugs</td>
+                                </tr>
+                                <tr>
+                                    <td data-label="Site Name">CERT-PH | DICT PHILIPPINES</td>
+                                    <td data-label="Reward">ACKNOWLEDGEMENTS</td>
+                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/rajnish-kumar-eh_bughunting-security-secured-activity-6879258690747289600-zL4P" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="description">Acknowledgements For Reporting Various Bugs On Philippines Govt. Web Sites</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                </div>
+
+                                        
+            </div>
+        </section>  
+
+        <!--Service Section End-->
+        <!--Portfolio Section-->
+        <section class="portfolio section" id="portfolio">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>WALL OF CERTIFICATIONS & BADGES</h2>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>BADGES</h2>
+                    </div>                
+                <!-- Start Portfolio item -->
+                <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                    <div class="row">
+                        <img src="./images/CEH-Practical-Logo.png" alt="CEH|_certificate" height="50%" width="50%">
+                    </div>
+                </div>
+                <!-- End Portfolio item -->
+                <!-- Start Portfolio item -->
+                <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                    <div class="row">
+                        <img src="./images/logoewptxv2.png" alt="CEH|_certificate" height="60%" width="60%">
+                    </div>
+                </div>
+                <!-- End Portfolio item -->
+                <!-- Start Portfolio item -->
+                <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                    <div class="row">
+                        <script src="https://tryhackme.com/badge/402356" target="_blank"></script>
+                    </div>
+                </div>
+                <!-- End Portfolio item -->
+            </div>
+                <div class="row">
+                    <div class="portfolio-filter padd-15">
+                        <!--
+                        <button type="button" class="active" data-filter="all">All</button>
+                        <button type="button" data-filter="web-design">Web-design</button>
+                        <button type="button" data-filter="photography">Photography</button>
+                        <button type="button" data-filter="wordpress">Wordpress</button>
+                        -->
+                    </div>
+                </div>
+                
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>CERTIFICATIONS</h2>
+                    </div>
+                </div>
+                <div class="row portfolio-items">
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/CEH.png" alt="CEH|_certificate">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By EC-Council</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div><!--RAJNISH KUMAR(Dreamer)-->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/ewptxv2.png" alt="eWPTXv2_certificate">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By eLearnSecurity</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div><!--RAJNISH KUMAR(Dreamer)-->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/EHE.png" alt="EHE_certificate">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By EC-Council Codered</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div><!--RAJNISH KUMAR(Dreamer)-->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/isea.png" alt="isea_certificate">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By ISEA</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div><!--RAJNISH KUMAR (Dreamer)-->
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="wordpress" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/nse1.png" alt="NSE1_CERT">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY FORTINET NSE</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="photography" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/nse2.jpg" alt="NSE2_CERT">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY FORTINET NSE</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img"><!--RAJNISH KUMAR (Dreamer)-->
+                                <img src="./images/thm7.png" alt="THM1">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY TRYHACKME</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/thm5.png" alt="THM2">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY TRYHACKME</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="wordpress" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/thm4.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY TRYHACKME</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/thm3.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY TRYHACKME</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/thm2.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY TRYHACKME</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/thm1.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY TRYHACKME</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/aoc22.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY TRYHACKME</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/thm8.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY TRYHACKME</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/csi2.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY CSI LINUX</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item --><!--RAJNISH KUMAR (Dreamer)-->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/csi1.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY CSI LINUX</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/sf.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY SKILLFRONT</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/codered1.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY CODERED</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/codered2.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY CODERED</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()"><!--RAJNISH KUMAR (Dreamer)-->
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/udemy1.jpg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY UDEMY</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/udemy2.jpg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY UDEMY</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/udemy3.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY UDEMY</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/cisco1.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY CISCO</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/cisco2.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY CISCO</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img"><!--RAJNISH KUMAR (Dreamer)-->
+                                <img src="./images/cp1.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY SKILLFRONT</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                      <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/google.jpg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY SKILLFRONT</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/hf.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY HACKING FLIX</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <br /><hr /><br />
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>WORKSHOPS</h2>
+                        </div>
+                    </div>
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/redteam.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY REDTEAM HACKER ACADEMY</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/iste.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY ISTE</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/iste2.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>By ISTE</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/ai.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY KVCH</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/dm.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY KVCH</h4>
+                                <div class="icon"><!--RAJNISH KUMAR (Dreamer)-->
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/antwak1.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY ANT WAK</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/antwak2.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY ANT WAK</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/antwak3.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY ANT WAK</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/antwak4.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY ANT WAK</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/antwak5.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY ANT WAK</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/antwak5.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY ANT WAK</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/cb (1).jpg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY CODING BLOCKS</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/cb (2).jpg" alt="portfolio"><!--RAJNISH KUMAR (Dreamer)-->
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY CODING BLOCKS</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/cb (3).jpg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY CODING BLOCKS</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/cb (4).jpg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY CODING BLOCKS</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/cb (5).jpg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY CODING BLOCKS</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/cb (6).jpg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY CODING BLOCKS</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/cb (7).jpg" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY CODING BLOCKS</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/node.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY CODING BLOCKS</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="portfolio-item-inner shadow-dark">
+                            <div class="portfolio-img">
+                                <img src="./images/cehfl.png" alt="portfolio">
+                            </div>
+                            <div class="portfolio-info">
+                                <h4>BY CODING BLOCKS</h4>
+                                <div class="icon">
+                                    <i class="fa fa-search"></i> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>INTERNSHIPS / VOLUNTEERSHIPS</h2>
+                        </div>
+                    </div>
+                   <div class="row">
+                        <div class="portfolio-filter padd-15">
+                            <!--
+                            <button type="button" class="active" data-filter="all">All</button>
+                            <button type="button" data-filter="web-design">Web-design</button>
+                            <button type="button" data-filter="photography">Photography</button>
+                            <button type="button" data-filter="wordpress">Wordpress</button>
+                            -->
+                        </div>
+                    </div>
+                    <div class="row portfolio-items">
+                        <!-- Start Portfolio item -->
+                        <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="./images/vtf1.png" alt="isea_certificate">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>BY CFB</h4>
+                                    <div class="icon">
+                                        <i class="fa fa-search"></i> </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Portfolio item -->
+                            <!-- Start Portfolio item -->
+                            <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="./images/cs.png" alt="isea_certificate">
+                                    </div>
+                                    <div class="portfolio-info">
+                                        <h4>BY CFB</h4>
+                                        <div class="icon">
+                                            <i class="fa fa-search"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Portfolio item -->
+                            <!-- Start Portfolio item -->
+                            <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="./images/wst.png" alt="isea_certificate">
+                                    </div>
+                                    <div class="portfolio-info">
+                                        <h4>BY CFB</h4>
+                                        <div class="icon">
+                                            <i class="fa fa-search"></i> </div>
+                                    </div><!--RAJNISH KUMAR (Dreamer)-->
+                                </div>
+                            </div>
+                            <!-- End Portfolio item -->
+                        <!-- Start Portfolio item -->
+                            <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="./images/ti.png" alt="isea_certificate">
+                                    </div>
+                                    <div class="portfolio-info">
+                                        <h4>BY CFB</h4>
+                                        <div class="icon">
+                                            <i class="fa fa-search"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Portfolio item -->
+                            <!-- Start Portfolio item -->
+                            <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="./images/wd.png" alt="isea_certificate">
+                                    </div>
+                                    <div class="portfolio-info">
+                                        <h4>BY CFB</h4>
+                                        <div class="icon">
+                                            <i class="fa fa-search"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Portfolio item -->
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>LETTER OF RECOMMENDATIONS</h2>
+                        </div>
+                    </div><!--RAJNISH KUMAR (Dreamer)-->
+                            <!-- Start Portfolio item -->
+                            <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="./images/LOR (1).png" alt="isea_certificate">
+                                    </div>
+                                    <div class="portfolio-info">
+                                        <h4>BY CFB</h4>
+                                        <div class="icon">
+                                            <i class="fa fa-search"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Portfolio item -->
+                            <!-- Start Portfolio item -->
+                            <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="./images/LOR (2).png" alt="isea_certificate">
+                                    </div>
+                                    <div class="portfolio-info">
+                                        <h4>BY CFB</h4>
+                                        <div class="icon">
+                                            <i class="fa fa-search"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Portfolio item -->
+                            <!-- Start Portfolio item -->
+                            <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="./images/LOR (3).png" alt="isea_certificate">
+                                    </div>
+                                    <div class="portfolio-info">
+                                        <h4>BY CFB</h4>
+                                        <div class="icon">
+                                            <i class="fa fa-search"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Portfolio item -->
+                            <!-- Start Portfolio item -->
+                            <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                                <div class="portfolio-item-inner shadow-dark">
+                                    <div class="portfolio-img">
+                                        <img src="./images/LOR (4).png" alt="isea_certificate">
+                                    </div>
+                                    <div class="portfolio-info">
+                                        <h4>BY CFB</h4>
+                                        <div class="icon">
+                                            <i class="fa fa-search"></i> </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- End Portfolio item -->
+                </div><!--RAJNISH KUMAR (Dreamer)-->
+
+            </div>
+        </section>
+        <!--EMBEDS Section-->
+        <section class="portfolio section" id="contents">
+            <div class="container">
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>HACKED HITACHI</h2>
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/evDsE1pySbc" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                </div><br><br>
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>HACKED VISMA</h2>
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VTBngPjWr1I" title="YouTube video player" frameborder="0" disallow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div><br><br>
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>BUSINESS LOGIC ERROR</h2>
+                    </div>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yJK9NJMiDhk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div><br><br>
+                <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>PROJECT OMNITRIX</h2>
+                    </div>
+                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6881525303278211072?compact=1" height="349" width="660" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
+                </div><br><br>
+                
+                
+                 <!--   <div class="row portfolio-items">RAJNISH KUMAR (Dreamer)-->
+                        <!-- Start Portfolio item -->
+                     <!--   <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                            <div class="row">
+                                <div class="section-title padd-15">
+                                    <h2>LINKEDIN</h2>
+                                </div>
+                            </div>
+                            <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+                            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="rajnish-kumar-eh" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/rajnish-kumar-eh?trk=profile-badge"></a></div>
+                        </div>
+                        End Portfolio item -->
+                
+                        
+                    
+                    </div>
+                    
+                
+                </div>
+            </div>
+        </section>               
+        <!--Contact Section-->
+        <section class="contact section" id="contact">
+                <div class="container">
+                    <div class="row">
+                    <div class="section-title padd-15">
+                        <h2>Contact Me</h2>
+                    </div>
+                    </div>
+                <div class="row">
+                    <!--Contact info item-->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-whatsapp"></i></div>
+                        <h4>Contact Me On</h4>
+                        <p>+91 7082859308</p>
+                    </div>
+                    <!--Contact info item End-->
+                    <!--Contact info item-->
+                    <!--<div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-map-marker"></i></div>
+                        <h4>Address</h4>
+                        <p>Arya Nagar Street No 2, Morar <Gwalior</p>
+                    </div>-->
+                    <!--Contact info item End-->
+                    <!--Contact info item-->
+                    <div class="contact-info-item padd-15">
+                        <div class="icon"><i class="fa fa-envelope"></i></div>
+                        <h4>Email</h4>
+                        <p>contact.dreameryt@gmail.com</p>
+                    </div>
+                    <!--Contact info item End-->
+                 </div><!--RAJNISH KUMAR (Dreamer)-->
+                    
+                    <div class="row">
+                        <form class="contact-form padd-15">
+                            <div class="row">
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Name">
+                                    </div>
+                                </div>
+                                <div class="form-item col-6 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Email">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12 padd-15">
+                                    <div class="form-group">
+                                        <input type="text" class="form-control" placeholder="Subject">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="form-item col-12">
+                                    <div class="form-group">
+                                    <textarea type="text" class="form-control" placeholder="Message"></textarea>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-12 padd-15">
+                                <button type="submit" class="btn" onmouseover="button.play()" onclick="whistle.play()">Send Message - NOT IN SERVICE</button>
+                                </div>
+                            </div>
+                            
+                        </form><!--RAJNISH KUMAR (Dreamer)-->
+                    </div>
+                    <!--Contact Form End-->
+                
+                </div> 
+        </section>       
+        <!--Contact Section End-->
+    </div>
+    <!--Main content end-->
+</div>
+<!--Main Container-->
+
+<!--LightBox-->
+<div class="lightbox ">
+    <div class="lightbox-content">
+        <div class="lightbox-close">&times;</div>
+        <img src="./images/snake.gif" class="lightbox-img" onclick="nextItem()">
+        <div class="lightbox-caption">
+            <div class="caption-text"></div>
+            <div class="caption-counter"></div>
+        </div>
+
+    </div>
+    <div class="lightbox-controls">
+        <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
+        <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
+    </div>
+</div>
+<!--LightBox End-->
+
+<!--Live Stle Switcher-->
+<div class="style-switcher">
+    <div class="toggle-style-switcher" onclick="bleep.play()">
+        <i class="fa fa-cog fa-spin" onclick="bleep.play()"></i>
+    </div>    
+    <h5>Style Switcher</h5>
+    <ul><!--RAJNISH KUMAR (Dreamer)-->
+        <li><a href="javascript:void(0);" title="pink" style="background-color: #ec1839;" onclick="setActiveStyle('pink')"></a></li>
+        <li><a href="javascript:void(0);" title="blue" style="background-color: #2196f3;" onclick="setActiveStyle('blue')"></a></li>
+        <li><a href="javascript:void(0);" title="green" style="background-color: #72b626;" onclick="setActiveStyle('green')"></a></li>
+        <li><a href="javascript:void(0);" title="orange" style="background-color: #fa5b07;" onclick="setActiveStyle('orange')"></a></li>
+        <li><a href="javascript:void(0);" title="yellow" style="background-color: #ffb400;" onclick="setActiveStyle('yellow')"></a></li>
+    </ul>
+    <h5>Body Skin</h5>
+    <label>
+        <input type="radio" class="body-skin" name="body-style" value="light" checked="true" onclick="whistle.play()">
+        Light
+    </label>
+    <label>
+        <input type="radio" class="body-skin" name="body-style" value="dark" onclick="whistle.play()">
+        Dark
+    </label>
+</div>
+
+<!--Live Style Switcher End here-->
+
+<script src="js/script.js"></script>
+<script src="./js/styleSwitcher.js"></script>
+
+</body>
+</html>
+<!--RAJNISH KUMAR (Dreamer)-->
