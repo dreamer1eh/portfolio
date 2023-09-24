@@ -1,23 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/6.4.2/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/cca841ce68.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <link rel="stylesheet" type="text/css" href="./css/responsive.css">
     <link rel="stylesheet" type="text/css" href="./css/pink.css">
 
     <!--Live Style Switcher--><!--RAJNISH KUMAR (Dreamer)-->
     <link rel="stylesheet" class="alternate-style" title="blue" type="text/css" href="./css/blue.css" disabled>
-    <link rel="stylesheet"  class="alternate-style" title="green" type="text/css" href="./css/green.css" disabled>
-    <link rel="stylesheet"  class="alternate-style" title="orange" type="text/css" href="./css/orange.css" disabled>
-    <link rel="stylesheet"  class="alternate-style" title="yellow" type="text/css" href="./css/yellow.css" disabled>
-    <link rel="stylesheet"  class="alternate-style" title="pink" type="text/css" href="./css/pink.css">
+    <link rel="stylesheet" class="alternate-style" title="green" type="text/css" href="./css/green.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="orange" type="text/css" href="./css/orange.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="yellow" type="text/css" href="./css/yellow.css" disabled>
+    <link rel="stylesheet" class="alternate-style" title="pink" type="text/css" href="./css/pink.css">
     <link rel="stylesheet" type="text/css" href="./css/styleSwitcher.css">
     <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
     <title>i_eh_dreamer</title>
-    <script>
+    <!-- <script>
         var bleep = new Audio();
         bleep.src = "./audio/bleep.mp3";
     </script>
@@ -28,96 +31,110 @@
     <script>
         var whistle = new Audio();
         whistle.src = "./audio/whistle.mp3";
-    </script>
-        <style type="text/css">
-            *{
-                margin: 0;
-                padding: 0;
-                box-sizing: border-box;
-            }
-            .table-container{
-                padding: 0 10%;
-                margin: 40px auto 0;
-            }
-            .heading{
-                font-size: 40px;
-                text-align: center;
-                color: #f1f1f1;
-                margin-bottom: 40px;
-            }
-            .table{
-                width: 100%;
-                border-collapse: collapse;
-            }
-            .table thead{
-                background-color: #ee2828;
-            }
-            .table thead tr th{
-                font-size: 14px;
-                font-weight: medium;
-                letter-spacing: 0.35px;
-                color: #FFFFFF;
-                opacity: 1;
-                padding: 12px;
-                vertical-align: top;
-                border: 1px solid #dee2e685;
-            }
-            .table tbody tr td{
-                font-size: 14px;
-                letter-spacing: 0.35px;
-                font-weight: normal;
-                color: #f1f1f1;
-                background-color: #3c3f44;
-                padding: 8px;
-                text-align: center;
-                border: 1px solid #dee2e685;
-            }
-            .table tbody tr td .btn{
-                width: 130px;
-                text-decoration: none;
-                line-height: 35px;
-            /*    display: block;*/
-                background-color: #ff1046;
-                font-weight: medium;
-                color: #FFFFFF;
-                text-align: center;
-                vertical-align: middle;
-                user-select: none;
-                border: 1px solid transparent;
-                font-size: 14px;
-                opacity: 1;
-            }
-    
-    @media (max-width: 768px){
-        .table thread{
-            display: none;
+    </script>-->
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
-        .table, .table tbody,.table tr,.table td{
-            display: block;
+
+        .table-container {
+            padding: 0 10%;
+            margin: 40px auto 0;
+        }
+
+        .heading {
+            font-size: 40px;
+            text-align: center;
+            color: #f1f1f1;
+            margin-bottom: 40px;
+        }
+
+        .table {
             width: 100%;
+            border-collapse: collapse;
         }
-        .table tr{
-            margin-bottom: 15px;
+
+        .table thead {
+            background-color: #ee2828;
         }
-        .table tbody tr td{
-            text-align: right;
-            padding-left: 50%;
-            position: relative;
-        }
-        .table td:before{
-            content: attr(data-label);
-            position: absolute;
-            left: 0;
-            width: 50%;
-            padding-left: 15px;
-            font-weight: 600;
+
+        .table thead tr th {
             font-size: 14px;
-            text-align: left;
+            font-weight: medium;
+            letter-spacing: 0.35px;
+            color: #FFFFFF;
+            opacity: 1;
+            padding: 12px;
+            vertical-align: top;
+            border: 1px solid #dee2e685;
         }
-    }
-    
-        </style>
+
+        .table tbody tr td {
+            font-size: 14px;
+            letter-spacing: 0.35px;
+            font-weight: normal;
+            color: #f1f1f1;
+            background-color: #3c3f44;
+            padding: 8px;
+            text-align: center;
+            border: 1px solid #dee2e685;
+        }
+
+        .table tbody tr td .btn {
+            width: 130px;
+            text-decoration: none;
+            line-height: 35px;
+            /*    display: block;*/
+            background-color: #ff1046;
+            font-weight: medium;
+            color: #FFFFFF;
+            text-align: center;
+            vertical-align: middle;
+            user-select: none;
+            border: 1px solid transparent;
+            font-size: 14px;
+            opacity: 1;
+        }
+
+        @media (max-width: 768px) {
+            .table thread {
+                display: none;
+            }
+
+            .table,
+            .table tbody,
+            .table tr,
+            .table td {
+                display: block;
+                width: 100%;
+            }
+
+            .table tr {
+                margin-bottom: 15px;
+            }
+
+            .table tbody tr td {
+                text-align: right;
+                padding-left: 50%;
+                position: relative;
+            }
+
+            .table td:before {
+                content: attr(data-label);
+                position: absolute;
+                left: 0;
+                width: 50%;
+                padding-left: 15px;
+                font-weight: 600;
+                font-size: 14px;
+                text-align: left;
+            }
+        }
+    </style>
 </head>
+
 <body>
     <!--PreLoader-->
     <div class="preloader">
@@ -126,305 +143,530 @@
         </div>
     </div>
     <!--Preloader End-->
-<!--Main Container-->
-<div class="main-container">
-    <!--Aside-->
-    <div class="aside">
-        <!--Logo-->
-        <div class="logo">
-            <a href="https://iehdreamer.in/">DREAMER</a>
-        </div>
-        <!--Nav Toggler Button-->
-        <div class="nav-toggler" onclick="bleep.play()">
-            <span></span>
-        </div>
-        <!--NAV-->
-        <ul class="nav">
-            <li><a href="#home" onmouseover="bleep.play()" class="active"><i class="fa fa-home"></i> Home</a></li>
-            <li><a href="#about" onmouseover="bleep.play()"><i class="fa fa-user"></i> About</a></li>
-            <li><a href="#services" onmouseover="bleep.play()"><i class="fa fa-list"></i> Achievements</a></li>
-            <li><a href="#portfolio" onmouseover="bleep.play()"><i class="fa fa-briefcase"></i> Certificates</a></li>
-            <li><a href="#contents" onmouseover="bleep.play()"><i class="fa fa-briefcase"></i> Contents</a></li>
-            <li><a href="#contact" onmouseover="bleep.play()"><i class="fa fa-comments"></i> Contact</a></li>
-        </ul>
-        <!--Copyright-->
-        <div class="copyright-text">
-            &copy; RAJNISH KUMAR, C|EH
-        </div>
-    </div>
-    <!--Aside End-->
-    <!--Main Content-->
-    <div class="main-content">
-        <!--Home Section-->
-        <section class="home section active" id="home"> 
-            <div class="container">
-                <div class="intro">
-                    <img src="./images/rj.png" alt="profile" class="shadow-dark">
-                    <h1>RAJNISH KUMAR (Dreamer)</h1>
-                    <p>~ i_eh_dreamer</p><br>
-                    <p style="color: red;"><strong>CERTIFIED ETHICAL HACKER (C|EH-Pratical) | CERTIFIED eWPTXv2</strong></p><br>
-                    <p><strong>ETHICAL HACKER | SECURITY RESEARCHER | CYBER CRIME INVESTIGATOR</strong></p><br>
-                    <p>CYBER SECURITY ANALYST & RED TEAM SPECIALIST (OFFSHORE TEAM LEAD)<br>AT <b>CYBERARCH, ESTONIA</b> x <b>BOCX INC.</b></p><br /><hr /><br />
-                    <p><strong>FOLLOW <i>@i_eh_dreamer</i> ON SOCIAL MEDIA</strong></p>
-                    <div class="social-link">
-                        <a href="https://twitter.com/i_eh_dreamer/" onmouseover="bleep.play()" target="_blank"><i class="fa fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/i_eh_dreamer/" onmouseover="bleep.play()" target="_blank"><i class="fa fa-instagram"></i></a>
-                        <a href="https://github.com/dreamer1eh/"><i class="fa fa-github" onmouseover="bleep.play()" target="_blank"></i></a>
-                        <a href="https://www.linkedin.com/in/rajnish-kumar-eh/" onmouseover="bleep.play()" target="_blank"><i class="fa fa-linkedin"></i></a>
-                        <a href="https://www.youtube.com/iehdreamer/" onmouseover="bleep.play()" target="_blank"><i class="fa fa-youtube-play"></i></a>
-                    </div><br>
-                    <p><strong><i>#SECURITY_MATTERS</i></strong></p>
-                </div>
+    <!--Main Container-->
+    <div class="main-container">
+        <!--Aside-->
+        <div class="aside">
+            <!--Logo-->
+            <div class="logo">
+                <a href="https://iehdreamer.in/">
+                    <marquee>
+                        DREAMER&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <span style="color: red;">CYBER</span><span style="color: blue;">XIELD</span>
+                    </marquee>
+                </a>
             </div>
-        </section>
-        <!--Home Section End-->
-        <!--About Section-->
-        <section class="about section" id="about">
-            <div class="container">
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>About Me</h2>
+            <!--Nav Toggler Button-->
+            <div class="nav-toggler" onclick="bleep.play()">
+                <span></span>
+            </div>
+            <!--NAV-->
+            <ul class="nav">
+                <li><a href="#home" onmouseover="bleep.play()" class="active"><i class="fa fa-home"></i> Home</a></li>
+                <li><a href="#about" onmouseover="bleep.play()"><i class="fa fa-user"></i> About Me</a></li>
+                <li><a href="#services" onmouseover="bleep.play()"><i class="fa fa-list"></i> Achievements</a></li>
+                <li><a href="#portfolio" onmouseover="bleep.play()"><i class="fa fa-certificate"></i> Certifications</a></li>
+                <li><a href="#about_cyberxield" onmouseover="bleep.play()"><i class="fa fa-building"></i> CyberXield</a></li>
+                <li><a href="#courses" onmouseover="bleep.play()"><i class="fa fa-book"></i> Courses Offered</a></li>              
+                <li><a href="#contact" onmouseover="bleep.play()"><i class="fa fa-comments"></i> Contact</a></li>
+            </ul>
+            <!--Copyright-->
+            <div class="copyright-text">
+                <div class="relue">&copy; RAJNISH KUMAR, C|EH</div>
+            </div>
+        </div>
+        <!--Aside End-->
+        <!--Main Content-->
+        <div class="main-content">
+            <!--Home Section-->
+            <section class="home section active" id="home">
+                <div class="container">
+                    <div class="intro">
+                        <img src="./images/dp.png" alt="profile" class="shadow-dark">
+                        <div class="text-rainbow-animation"><h1>RAJNISH KUMAR (Dreamer)</h1></div>
+                        <p>~ i_eh_dreamer</p><br>
+                        <p><strong>FOUNDER OF </strong><b><span style="color: red;">CYBER</span><span style="color: blue;">XIELD</span></b> - Group Of Cyber Experts<br><br>
+                        <p style="color: red;"><strong>CERTIFIED ETHICAL HACKER (C|EH-Pratical) | CERTIFIED
+                                eWPTXv2</strong></p><br>
+                        <p><strong>ETHICAL HACKER | SECURITY RESEARCHER | BUG BOUNTY HUNTER | CYBER SECURITY
+                                TRAINER</strong></p><br>
+                        <p>CYBER SECURITY TESTER AT <b>CYBERARCH CONSULTING OÜ, ESTONIA</b></p><br />
+                        
+                        <hr /><br />
+                        <div class="cyberxield"><p><strong>FOLLOW <i>@i_eh_dreamer</i> ON SOCIAL MEDIA</strong></p></div>
+                        <div class="social-link">
+                            <a href="https://www.linkedin.com/in/rajnish-kumar-eh/" onmouseover="bleep.play()"
+                                target="_blank"><i class="fa fa-linkedin"></i></a>
+                            <a href="https://www.instagram.com/i_eh_dreamer/" onmouseover="bleep.play()"
+                                target="_blank"><i class="fa fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/iehdreamer/" onmouseover="bleep.play()" target="_blank"><i
+                                    class="fa fa-youtube-play"></i></a>
+                            <a href="https://x.com/i_eh_dreamer/" onmouseover="bleep.play()" target="_blank"><i
+                                    class="fa-brands fa-x-twitter"></i></a>
+                            <a href="https://www.threads.net/@i_eh_dreamer/" onmouseover="bleep.play()"
+                                target="_blank"><i class="fa-brands fa-threads"></i></a>
+                            <a href="https://github.com/dreamer1eh/"><i class="fa fa-github" onmouseover="bleep.play()"
+                                    target="_blank"></i></a>
+
+                        </div><br>
+                        <p><strong><div class="relue">#SECURITY_MATTERS</div></strong></p>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="about-content padd-15">
-                        <div class="row">
-                            <div class="about-text padd-15">
-                                <h3>Hi, I'm Rajnish Kumar,<span> Cybersecurity Analyst & Red Team Specialist.</span></h3>
-                                <p>My name is Rajnish Kumar, graduated in B.TECH in C.S.E., highly passionate about Cyber Security focus on Red Teaming & Cyber Crime Investigations. I have been working as a Cyber Security Analyst and Red Team Specialist for more than 1 year. Skilled in Linux, Windows, Network Security, Web Application Security, Social Engineering Security Assessments etc. I have acquired the necessary skills and knowledge to secure your domain.</p>
+            </section>
+            <!--Home Section End-->
+            <!--About Section-->
+            <section class="about section" id="about">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>About Me</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <h3>Hi, I'm Rajnish Kumar,<span> Cybersecurity Analyst & Red Team Specialist.</span>
+                                    </h3>
+                                    <p style="text-align: justify;">My name is Rajnish Kumar, graduated in B.TECH in
+                                        C.S.E., highly passionate about
+                                        Cyber Security focus on Red Teaming & Cyber Crime Investigations. I have been
+                                        working as a Cyber Security Analyst and Red Team Specialist for more than 1
+                                        year. Skilled in Linux, Windows, Network Security, Web Application Security,
+                                        Social Engineering Security Assessments etc. I have acquired the necessary
+                                        skills and knowledge to secure your domain.</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="personal-info padd-15">
+                                    <div class="row">
+                                        <div class="info-item padd-15">
+                                            <p>E-mail : <span><a
+                                                        href="mailto:contactrajnish@duck.com"><b>contactrajnish@duck.com</b></a></span>
+                                            </p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Youtube : <span><b><a href="https://www.youtube.com/iehdreamer"
+                                                            target="_blank">i_eh_dreamer</a></b></span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Course : <span>Bachelor In Technology (B.TECH)</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>Branch : <span>Computer Science & Engineering (C.S.E.)</span></p>
+                                        </div>
+
+                                        <div class="info-item padd-15">
+                                            <p>Work : <span>Cyberarch Consulting, Estonia (Full-Time)</span></p>
+                                        </div>
+
+                                        <div class="info-item padd-15">
+                                            <p>Role : <span>Cyber Security Analyst & Red Team Specialist</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>City : <span>New Delhi</span></p>
+                                        </div>
+                                        <div class="info-item padd-15">
+                                            <p>State w/ Country : <span>Delhi, India</span></p>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="buttons padd-15">
+                                            <a href="mailto:contactrajnish@duck.com" target="_blank" class="btn"
+                                                onclick="button.play()">ASK FOR RESUME</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="skills padd-15">
+                                    <div class="row">
+                                        <div class="skill-item padd-15">
+                                            <h5>Vulnerability Assessment</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 100%"></div>
+                                                <div class="skill-percent">100%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>Network Pentesting</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 100%"></div>
+                                                <div class="skill-percent">100%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>WebApp Pentesting</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 100%"></div>
+                                                <div class="skill-percent">100%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>Social Engineering Sec. Assessment</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 100%"></div>
+                                                <div class="skill-percent">100%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>Linux & Windows Administration</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 100%"></div>
+                                                <div class="skill-percent">100%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>Networking</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 100%"></div>
+                                                <div class="skill-percent">100%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>Open-Source Intelligence</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 100%"></div>
+                                                <div class="skill-percent">100%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>Digital Forensics</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 75%"></div>
+                                                <div class="skill-percent">75%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>Web Development (Front-End)</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 90%"></div>
+                                                <div class="skill-percent">90%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>Web Hosting (Google Cloud, AWS, Microsoft Azure)</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 100%"></div>
+                                                <div class="skill-percent">100%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>Bash Scripting</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 100%"></div>
+                                                <div class="skill-percent">100%</div>
+                                            </div>
+                                        </div>
+                                        <div class="skill-item padd-15">
+                                            <h5>Python Programming</h5>
+                                            <div class="progress">
+                                                <div class="progress-in" style="width: 90%"></div>
+                                                <div class="skill-percent">90%</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="education padd-15">
+                                    <h3 class="title">Education & Qualifications</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!--Timeline Item-->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h6 class="timeline-date"><i class="fa fa-calendar"></i>2018 - 2022
+                                                    </h6>
+                                                    <h4 class="timeline-title">B.Tech in Computer Science & Engineering
+                                                    </h4>
+                                                    <p class="timeline-text"><strong><i>2022 | B.Tech in C.S.E. | <a
+                                                                    href="https://mdu.ac.in/" target="_blank">MDU,
+                                                                    Rohtak</a></i></strong></p>
+                                                    <p class="timeline-text">Completed my graduation in B-Tech in
+                                                        Computer Science & Engineering from <strong><a
+                                                                href="https://saitm.ac.in/" target="_blank">St. Andrews
+                                                                Institute of Technology & Management, Gurgaon (SAITM,
+                                                                Gurgaon)</a>.</strong></p>
+                                                </div>
+                                                <!--TTimeline-item-end-->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h6 class="timeline-date"><i class="fa fa-calendar"></i>2016-2017
+                                                    </h6>
+                                                    <h4 class="timeline-title">Higher Secondary Examination (Class -
+                                                        12th)</h4>
+                                                    <p class="timeline-text"><strong><i>2017 | PCM |
+                                                                C.B.S.E.</i></strong></p>
+                                                    <p class="timeline-text">I had completed my 12th grade in PCM from
+                                                        <strong><a href="https://moderninternationalschool.com"
+                                                                target="_blank">Modern International School,
+                                                                Delhi</a></strong> through <strong>C.B.S.E.
+                                                            Board.</strong>
+                                                    </p>
+                                                </div>
+                                                <!--TTimeline-item-end-->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h6 class="timeline-date"><i class="fa fa-calendar"></i>2014-2015
+                                                    </h6>
+                                                    <h4 class="timeline-title">Secondary School Certificate (Class -
+                                                        10th) </h4>
+                                                    <p class="timeline-text"><strong><i>2015 | C.B.S.E.</i></strong></p>
+                                                    <p class="timeline-text">I had completed my secondary schooling from
+                                                        <strong><a href="https://www.sunshineschoolindia.com/"
+                                                                target="_blank">Sunshine Prep./High School,
+                                                                Muzaffarpur, Bihar</a></strong> through <strong>C.B.S.E.
+                                                            Board.</strong>
+                                                    </p>
+                                                    <p class="timeline-text">..</p>
+                                                    <p class="timeline-text"> ..</p>
+                                                </div><!--RAJNISH KUMAR (Dreamer)-->
+                                                <!--TTimeline-item-end-->
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="experience padd-15">
+                                    <h3 class="title">Experience</h3>
+                                    <div class="row">
+                                        <div class="timeline-box padd-15">
+                                            <div class="timeline shadow-dark">
+                                                <!--Timeline Item-->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h6 class="timeline-date"><i class="fa fa-calendar"></i>April
+                                                        (2023) - Present</h6>
+                                                    <h4 class="timeline-title">Cybersecurity Tester</h4>
+                                                    <p class="timeline-text"><STRONG><a
+                                                                href="https://cyberarch.eu/">CYBERARCH CONSULTING,
+                                                                ESTONIA</a></STRONG></p>
+                                                    <p class="timeline-text"><b>Job Role :</b></p>
+                                                    <p class="timeline-text">➢ Conduct White Box and Black Box Testing.
+                                                    </p>
+                                                    <p class="timeline-text">➢ Execute Vulnerability Assessment and
+                                                        Penetration Testing (VA & PT) on Networks, Systems, Web
+                                                        Applications, and Social Engineering.</p>
+                                                    <p class="timeline-text">➢ Project Documentation and Framework
+                                                        Documentation.</p>
+                                                    <p class="timeline-text">➢ Automation & Manual Testing Report
+                                                        Making.</p>
+                                                    <p class="timeline-text">➢ Created Automation Testing Environment
+                                                        Using Custom Self Made Scripts.</p>
+                                                    <p class="timeline-text">➢ Daily Meetings & Reportings.</p>
+                                                    <p class="timeline-text">➢ Creating Test Plan, Writing Test Cases,
+                                                        Performing the Manual Test.</p>
+                                                </div>
+                                                <!--TTimeline-item-end-->
+                                                <!--Timeline Item-->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h6 class="timeline-date"><i class="fa fa-calendar"></i>January
+                                                        (2022) - March (2023) | 1 Yr 3 Months</h6>
+                                                    <h4 class="timeline-title">Cybersecurity Analyst | Red Team
+                                                        Specialist | Off-Shore Team Lead</h4>
+                                                    <p class="timeline-text"><STRONG><a
+                                                                href="https://cyberarch.eu/">CYBERARCH CONSULTING,
+                                                                ESTONIA</a> x <a href="https://bocx.io/">BOCX INC.,
+                                                                PHILIPPINES </a></STRONG></p>
+                                                    <p class="timeline-text"><b>Job Role :</b></p>
+                                                    <p class="timeline-text">➢ Perform White Box & Black Box Testing.
+                                                    </p>
+                                                    <p class="timeline-text">➢ Perform VA & PT on Network, Systems, Web
+                                                        Applications & Social Engineering.</p>
+                                                    <p class="timeline-text">➢ Project Documentation and Framework
+                                                        Documentation.</p>
+                                                    <p class="timeline-text">➢ Automation & Manual Testing Report
+                                                        Making.</p>
+                                                    <p class="timeline-text">➢ Created Automation Testing Environment
+                                                        Using Custom Self Made Scripts.</p>
+                                                    <p class="timeline-text">➢ Daily Meetings & Reportings.</p>
+                                                    <p class="timeline-text">➢ Creating Test Plan, Writing Test Cases,
+                                                        Performing the Manual Test.</p>
+                                                    <p class="timeline-text">➢ Working as a Team Lead.</p>
+                                                </div>
+                                                <!--TTimeline-item-end-->
+                                                <div class="timeline-item">
+                                                    <div class="circle-dot"></div>
+                                                    <h6 class="timeline-date"><i class="fa fa-calendar"></i>August
+                                                        (2021) - March (2022) | 8 Months</h6>
+                                                    <h4 class="timeline-title">Head Coordinator at Crime Free Bharat
+                                                    </h4>
+                                                    <p class="timeline-text"><STRONG><a href="#">MSG's CRIME FREE
+                                                                BHARAT, MP, INDIA</a></STRONG></p>
+                                                    <p class="timeline-text"><b>Job Role :</b></p>
+                                                    <p class="timeline-text">➢ Internship Management under supervison of
+                                                        <b><a
+                                                                href="https://www.facebook.com/IndiaBookofRecords/photos/a.10150184652605623/10165695350465623/?type=3">India
+                                                                Book Of Record Holder Mr. Bhupesa Kumar Pallai</a></b>
+                                                    </p>
+                                                    <p class="timeline-text">➢ Head Coordinator & Mentor of
+                                                        Cybersecurity Department</p>
+                                                    <p class="timeline-text">➢ Head Coordinator & Mentor of Web Security
+                                                        & Testing Department</p>
+                                                    <p class="timeline-text">➢ Head Coordinator & Mentor of Threat
+                                                        Intelligence Department and worked on several cyber crime cases
+                                                        under National Threat Intelligence Response Team</p>
+                                                    <p class="timeline-text">➢ Head Coordinator & Mentor of Web
+                                                        Development Department</p>
+                                                    <p class="timeline-text">➢ Internship Report Making</p>
+                                                </div>
+                                            </div>
+                                            <!--TTimeline-item-end-->
+                                        </div>
+                                    </div>
+
+                                </div>
+
                             </div>
                         </div>
-                         <div class="row">
-                             <div class="personal-info padd-15">
-                                <div class="row">
-                                    <div class="info-item padd-15">
-                                        <p>E-mail : <span><a href="mailto:contactrajnish@duck.com"><b>contactrajnish@duck.com</b></a></span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                        <p>Youtube : <span><b><a href="https://www.youtube.com/iehdreamer" target="_blank">i_eh_dreamer</a></b></span></p>
-                                    </div>                                    
-                                    <div class="info-item padd-15">
-                                        <p>Course : <span>Bachelor In Technology (B.TECH)</span></p>
-                                    </div>
-                                    <div class="info-item padd-15">
-                                       <p>Branch : <span>Computer Science & Engineering (C.S.E.)</span></p>
-                                   </div>
-                                  
-                                   <div class="info-item padd-15">
-                                       <p>Work : <span>Cyberarch Consulting, Estonia (Full-Time)</span></p>
-                                   </div>
-                                   
-                                   <div class="info-item padd-15">
-                                       <p>Role : <span>Cyber Security Analyst & Red Team Specialist</span></p>
-                                   </div>
-                                   <div class="info-item padd-15">
-                                       <p>City : <span>New Delhi</span></p>
-                                   </div>
-                                   <div class="info-item padd-15">
-                                       <p>State w/ Country : <span>Delhi, India</span></p>
-                                   </div>
-                                </div>
-                                <div class="row">
-                                    <div class="buttons padd-15">
-                                        <a href="mailto:contactrajnish@duck.com?subject=Need Resume Of Rajnish Kumar For {Purpose} | iehdreamer.in&body=Hi, {Please write the reason or purpose to ask for resume. Thank you. - RAJNISH}" target="_blank" class="btn" onclick="button.play()">ASK FOR RESUME</a>
+                    </div>
+                </div>
+            </section>
+            <!--About Section End-->
+            <!--About Section-->
+            <section class="about section" id="about_cyberxield">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>About Us</h2>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="about-content padd-15">
+                            <div class="row">
+                                <div class="about-text padd-15">
+                                    <center><h3>We Are <span style="color: red;">CYBER</span><span
+                                            style="color: blue;">XIELD</span><div class="relue"><div class="relue" style="font-size: large;">
+                                            Unbreakable Shield, Unmatched Security.</div></center>
+                                    </h3>
                                     
-                                    </div>
-                                </div>
-                             </div>
-                             <div class="skills padd-15">
-                             <div class="row">
-                                 <div class="skill-item padd-15">
-                                     <h5>Vulnerability Assessment</h5>
-                                     <div class="progress">
-                                         <div class="progress-in" style="width: 100%"></div>
-                                         <div class="skill-percent">100%</div>
-                                     </div>
-                                 </div>
-                                 <div class="skill-item padd-15">
-                                    <h5>Network Pentesting</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 100%"></div>
-                                        <div class="skill-percent">100%</div>
-                                    </div>
-                                </div>                                
-                                 <div class="skill-item padd-15">
-                                    <h5>WebApp Pentesting</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 100%"></div>
-                                        <div class="skill-percent">100%</div>
-                                    </div>
-                                </div>
-                                <div class="skill-item padd-15">
-                                    <h5>Social Engineering Sec. Assessment</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 100%"></div>
-                                        <div class="skill-percent">100%</div>
-                                    </div>
-                                </div>
-                                <div class="skill-item padd-15">
-                                    <h5>Linux & Windows Administration</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 80%"></div>
-                                        <div class="skill-percent">80%</div>
-                                    </div>
-                                </div>
-                                <div class="skill-item padd-15">
-                                    <h5>Networking</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 90%"></div>
-                                        <div class="skill-percent">90%</div>
-                                    </div>
-                                </div>
-                                <div class="skill-item padd-15">
-                                    <h5>Open-Source Intelligence</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 90%"></div>
-                                        <div class="skill-percent">90%</div>
-                                    </div>
-                                </div>
-                                <div class="skill-item padd-15">
-                                    <h5>Digital Forensics</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 75%"></div>
-                                        <div class="skill-percent">75%</div>
-                                    </div>
-                                </div>
-                                <div class="skill-item padd-15">
-                                    <h5>Web Development (Front-End)</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 90%"></div>
-                                        <div class="skill-percent">90%</div>
-                                    </div>
-                                </div>
-                                <div class="skill-item padd-15">
-                                    <h5>Web Hosting (Google Cloud, AWS, Microsoft Azure)</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 75%"></div>
-                                        <div class="skill-percent">75%</div>
-                                    </div>
-                                </div>
-                                <div class="skill-item padd-15">
-                                    <h5>Bash Scripting</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 90%"></div>
-                                        <div class="skill-percent">90%</div>
-                                    </div>
-                                </div>
-                                <div class="skill-item padd-15">
-                                    <h5>Python Programming</h5>
-                                    <div class="progress">
-                                        <div class="progress-in" style="width: 90%"></div>
-                                        <div class="skill-percent">90%</div>
-                                    </div>
-                                </div>
-                               
-                             </div>
-                          </div>
-                         </div>
+                                    <p style="text-align: justify;">In an increasingly interconnected world, the
+                                        importance of cybersecurity cannot be overstated. Enter CYBERXIELD, a beacon of
+                                        unwavering commitment in the realm of cybersecurity, led by the visionary
+                                        RAJNISH KUMAR. At CYBERXIELD, we have undertaken a formidable mission – to
+                                        protect the global community from the ever-advancing and formidable threats that
+                                        loom in cyberspace.</p><br>
+                                    <center>
+                                        <h3><span style="font-size: large;">OUR COLLECTIVE STRENGTH</span></h3>
+                                    </center>
+                                    <p style="text-align: justify;">CYBERXIELD is not just a group; it's a
+                                        dynamic collective of cybersecurity experts. Our team, led by the visionary
+                                        RAJNISH KUMAR, comprises individuals who are not content with the status quo.
+                                        They are pioneers in the field, constantly exploring new frontiers to stay ahead
+                                        of evolving cyber threats.</p><br>
+                                    <center>
+                                        <h3><span style="font-size: large;">EMPOWERING THE FUTURE</span></h3>
+                                    </center>
+                                    <P style="text-align: justify;">One of our core commitments at CYBERXIELD is the
+                                        development of the next generation of cybersecurity professionals. In a world
+                                        where cybersecurity is no longer a luxury but a necessity, our mission is to
+                                        ensure that students have access to affordable, high-quality training. We firmly
+                                        believe that everyone, regardless of their background or financial resources,
+                                        should have the opportunity to embark on a promising career in cybersecurity.
+                                    </P><br>
+                                    <center>
+                                        <h3><span style="font-size: large;">BRIDGING THE GAP</span></h3>
+                                    </center>
+                                    <p style="text-align: justify;">CYBERXIELD stands out in the industry because we
+                                        bring real-world corporate expertise into the educational realm. Our team
+                                        includes seasoned professionals from the corporate sector of cybersecurity, and
+                                        this wealth of knowledge is imparted through our Live Course on CYBERSECURITY
+                                        AND ETHICAL HACKING. We provide not just theoretical knowledge but practical,
+                                        organizational-level skills that are invaluable in today's rapidly changing
+                                        threat landscape.</p><br>
+                                    <center>
+                                        <h3><span style="font-size: large;">OUR VISION - BEYONG EDUCATION</span></h3>
+                                    </center>
+                                    <p style="text-align: justify;">Our vision extends beyond traditional education. We
+                                        aspire to equip individuals with not just the technical skills but also the
+                                        ethical framework needed to excel in their careers. Our graduates aren't just
+                                        cybersecurity professionals; they are guardians of the digital realm, committed
+                                        to playing a crucial role in defending the world against cyber threats.</p><br>
+                                    <center>
+                                        <h3><span style="font-size: large;">JOIN OUR JOURNEY</span></h3>
+                                    </center>
+                                    <p style="text-align: justify;">We invite you to be a part of our journey. Join us
+                                        in creating a safer cyber world, where the expertise and passion of
+                                        cybersecurity professionals are harnessed to protect and secure our digital
+                                        future. At CYBERXIELD, we believe in an unbreakable shield and unmatched
+                                        security for all. Together, let's shape a more secure digital tomorrow.</p><br>
+                                    <center>
+                                        <h3><span style="font-size: large;">OUR TEAM</span></h3><hr><hr>
+                                    </center>
+                                    <div>
+                                        <table>
+                                            <tr>
+                                                <td>
+                                                    <center><img src="./images/raj.png" alt="profile" width="60%"
+                                                            height="60%"></center>
+                                                    <center>
+                                                        <a href="https://www.linkedin.com/in/rajnish-kumar-eh/" target="_blank"><h3 style="font-size: large;"><span>MR. RAJNISH KUMAR</span><br>Founder
+                                                        </h3></a>
+                                                    </center>
+                                                    
+                                                </td>
+                                                <td>
+                                                    <center>
+                                                        <center><img src="./images/riya.png" alt="profile" width="60%" height="60%"></center>
+                                                        <center>
+                                                            <a href="https://www.linkedin.com/in/riya-prajapati1/" target="_blank"><h3 style="font-size: large;"><span>MS. RIYA PRAJAPATI</span><br>Co-Founder
+                                                            </h3></a>
+                                                        </center>
+                                                </td>
+                                                <td>
+                                                    <center><img src="./images/prathamesh.png" alt="profile" width="70%" height="70%"></center>
+                                                            <center>
+                                                                <a href="https://www.linkedin.com/in/prathmesh-ahire/" target="_blank"><h3 style="font-size: large;"><span>MR. PRATHAMESH AHIRE</span><br>Co-Founder
+                                                                </h3></a>
+                                                            </center>
+                                                </td>
+                                            </tr>
+                                        </table>
 
-                         <div class="row">
-                            <div class="education padd-15">
-                                <h3 class="title">Education & Qualifications</h3>
-                                <div class="row">
-                                    <div class="timeline-box padd-15">
-                                    <div class="timeline shadow-dark">
-                                        <!--Timeline Item-->
-                                        <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                            <h6 class="timeline-date"><i class="fa fa-calendar"></i>2018 - 2022</h6>
-                                            <h4 class="timeline-title">B.Tech in Computer Science & Engineering</h4>
-                                            <p class="timeline-text"><strong><i>2022 | B.Tech in C.S.E. | <a href="https://mdu.ac.in/" target="_blank">MDU, Rohtak</a></i></strong></p>
-                                            <p class="timeline-text">Completed my graduation in B-Tech in Computer Science & Engineering from <strong><a href="https://saitm.ac.in/" target="_blank">St. Andrews Institute of Technology & Management, Gurgaon (SAITM, Gurgaon)</a>.</strong></p>
-                                        </div>
-                                        <!--TTimeline-item-end-->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                                <h6 class="timeline-date"><i class="fa fa-calendar"></i>2016-2017</h6>
-                                                <h4 class="timeline-title">Higher Secondary Examination (Class - 12th)</h4>
-                                                <p class="timeline-text"><strong><i>2017 | PCM | C.B.S.E.</i></strong></p>
-                                                <p class="timeline-text">I had completed my 12th grade in PCM from <strong><a href="https://moderninternationalschool.com" target="_blank">Modern International School, Delhi</a></strong> through <strong>C.B.S.E. Board.</strong></p>
-                                            </div>
-                                            <!--TTimeline-item-end-->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                                <h6 class="timeline-date"><i class="fa fa-calendar"></i>2014-2015</h6>
-                                                <h4 class="timeline-title">Secondary School Certificate (Class - 10th) </h4>
-                                                <p class="timeline-text"><strong><i>2015 | C.B.S.E.</i></strong></p>
-                                                <p class="timeline-text">I had completed my secondary schooling from <strong><a href="https://www.sunshineschoolindia.com/" target="_blank">Sunshine Prep./High School, Delhi</a></strong> through <strong>C.B.S.E. Board.</strong></p>
-                                                <p class="timeline-text">..</p>
-                                                <p class="timeline-text">  ..</p>
-                                            </div><!--RAJNISH KUMAR (Dreamer)-->
-                                            <!--TTimeline-item-end-->                
-                                        </div>
-                                    </div> 
-                                </div> 
+                                    </div><hr><hr><br><br>
+                                    <center>
+                                        <h3><span style="font-size: large;">OUR CERTIFICATION PARTNER</span></h3>
+                                    </center><hr><hr>
+                                    <div>
+                                        <table>
+                                            <tr><br>
+                                                    <center><img src="./images/logoca.png" alt="profile" width="30%" height="30%"></center>
+                                                    <center>
+                                                        <a href="https://cyberarch.eu"><h3 style="font-size: large;"><span>CYBERARCH</span><br><i
+                                                            class="fa fa-map-marker" aria-hidden="true"></i> Estonia, USA</h3></a>
+                                                    </center>
+                                                
+                                            </tr>
+                                        </table>
+                                    </div>
                                 </div>
-                            
-                            <div class="experience padd-15">
-                                <h3 class="title">Experience</h3>
-                                <div class="row">
-                                    <div class="timeline-box padd-15">
-                                    <div class="timeline shadow-dark">
-                                        <!--Timeline Item-->
-                                        <div class="timeline-item">
-                                        <div class="circle-dot"></div>
-                                            <h6 class="timeline-date"><i class="fa fa-calendar"></i>January (2022) - Present</h6>
-                                            <h4 class="timeline-title">Cybersecurity Analyst | Red Team Specialist | Off-Shore Team Lead</h4>
-                                            <p class="timeline-text"><STRONG><a href="https://cyberarch.eu/">CYBERARCH CONSULTING, ESTONIA</a> x <a href="https://bocx.io/">BOCX INC., PHILIPPINES </a></STRONG></p>
-                                            <p class="timeline-text"><b>Job Role :</b></p>
-                                            <p class="timeline-text">➢ Perform White Box & Black Box Testing.</p>
-                                            <p class="timeline-text">➢ Perform VA & PT on Network, Systems, Web Applications & Social Engineering.</p>
-                                            <p class="timeline-text">➢ Project Documentation and Framework Documentation.</p>
-                                            <p class="timeline-text">➢ Automation & Manual Testing Report Making.</p>
-                                            <p class="timeline-text">➢ Created Automation Testing Environment Using Custom Self Made Scripts.</p>
-                                            <p class="timeline-text">➢ Daily Meetings & Reportings.</p>
-                                            <p class="timeline-text">➢ Creating Test Plan, Writing Test Cases, Performing the Manual Test.</p>
-                                            <p class="timeline-text">➢ Working as a Team Lead.</p>
-                                        </div>
-                                        <!--TTimeline-item-end-->
-                                        <div class="timeline-item">
-                                            <div class="circle-dot"></div>
-                                                <h6 class="timeline-date"><i class="fa fa-calendar"></i>August (2021) - March (2022) | 8 Months</h6>
-                                                <h4 class="timeline-title">Head Coordinator at Crime Free Bharat</h4>
-                                                <p class="timeline-text"><STRONG><a href="#">MSG's CRIME FREE BHARAT, MP, INDIA</a></STRONG></p>
-                                                <p class="timeline-text"><b>Job Role :</b></p>
-                                                <p class="timeline-text">➢ Internship Management under supervison of <b><a href="https://www.facebook.com/IndiaBookofRecords/photos/a.10150184652605623/10165695350465623/?type=3">India Book Of Record Holder Mr. Bhupesa Kumar Pallai</a></b></p>
-                                                <p class="timeline-text">➢ Head Coordinator & Mentor of Cybersecurity Department</p>
-                                                <p class="timeline-text">➢ Head Coordinator & Mentor of Web Security & Testing Department</p>
-                                                <p class="timeline-text">➢ Head Coordinator & Mentor of Threat Intelligence Department and worked on several cyber crime cases under National Threat Intelligence Response Team</p>
-                                                <p class="timeline-text">➢ Head Coordinator & Mentor of Web Development Department</p>
-                                                <p class="timeline-text">➢ Internship Report Making</p>
-                                            </div>
-                                        </div>
-                                            <!--TTimeline-item-end-->
-                                    </div> 
-                                </div> 
-                                   
-                            </div>                                           
-                            
-                         </div>
+                            </div>
+
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <!--About Section End-->
-
-        <!--Service Section-->
-       <section class="service section" id="services"> 
-            <div class="container">
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>My Achievements</h2>
+            </section>
+            <!--About Section End-->
+            <!--Achievements Section-->
+            <section class="service section" id="services">
+                <div class="container">
+                    <div class="row">
+                        <div class="section-title padd-15">
+                            <h2>My Achievements</h2>
+                        </div>
+                        <div class="padd-15">
+                            <h2 style="color: red;font-size: 20px;">World's Top 1% on TryHackMe: Level 1337</h2>
+                            <script src="https://tryhackme.com/badge/402356" target="_blank"></script>
+                        </div>
                     </div>
-                    <div class="padd-15">
-                    <h2 style="color: red;font-size: 20px;">World's Top 1% on TryHackMe: Level 1337</h2>
-                    <script src="https://tryhackme.com/badge/402356" target="_blank"></script>    
                 </div>
-                </div>
-            </div>
                 <div class="row">
                     <div class="table-container">
-                        <h1 style="text-align:center;color: red;font-size: 40px;">Achievements Table</h1><br>
+                        <div class="relue"><h1 style="text-align:center;font-size: 40px;">Achievements Table</h1></div><br>
                         <table class="table">
                             <thead>
                                 <tr>
@@ -438,128 +680,191 @@
                                 <tr>
                                     <td data-label="Site Name">MICROSOFT</td>
                                     <td data-label="Reward">HALL OF FAME (x3)</td>
-                                    <td data-label="Site Name"><a target="_blank" href="https://msrc.microsoft.com/update-guide/en-us/acknowledgement/online" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
-                                    <td data-label="description">DOM-XSS(x1) & HTML INJECTION(x4)<BR>(HOF MONTH - OCT.,NOV. 2022)</td>
+                                    <td data-label="Site Name"><a target="_blank"
+                                            href="https://msrc.microsoft.com/update-guide/en-us/acknowledgement/online"
+                                            class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a>
+                                    </td>
+                                    <td data-label="description">DOM-XSS(x1) & HTML INJECTION(x4)<BR>(HOF MONTH -
+                                        OCT.,NOV. 2022)</td>
                                 </tr>
                                 <tr>
                                     <td data-label="Site Name">ADOBE</td>
                                     <td data-label="Reward">HALL OF FAME & HACKERONE THANKS</td>
-                                    <td data-label="Site Name"><a target="_blank" href="https://helpx.adobe.com/security/acknowledgements.html" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="Site Name"><a target="_blank"
+                                            href="https://helpx.adobe.com/security/acknowledgements.html" class="btn"
+                                            onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
                                     <td data-label="description">DOM-XSS(x2) & HTML INJECTION(x2) (HOF REGION - US)</td>
                                 </tr>
                                 <tr>
                                     <td data-label="Site Name">ADIDAS</td>
                                     <td data-label="Reward">BOUNTY & BUG CROWD POINTS</td>
-                                    <td data-label="Site Name"><a target="_blank" href="https://helpx.adobe.com/security/acknowledgements.html" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="Site Name"><a target="_blank"
+                                            href="https://helpx.adobe.com/security/acknowledgements.html" class="btn"
+                                            onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
                                     <td data-label="description">DOM-XSS(x2) & HTML INJECTION(x2) (HOF REGION - US)</td>
                                 </tr>
                                 <tr>
                                     <td data-label="Site Name">HITACHI VANTARA</td>
                                     <td data-label="Reward">APPRECIATION LETTER</td>
-                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/rajnish-kumar-eh_appreciation-letterrajnishkumar-activity-7024615537905152000-wFHN" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
-                                    <td data-label="description">FOUND COMPLETE WEB NETWORK EXPOSED ON SHODAN WHICH ARE VULNERABLE TO DOM-XSS</td>
+                                    <td data-label="Site Name"><a target="_blank"
+                                            href="https://www.linkedin.com/posts/rajnish-kumar-eh_appreciation-letterrajnishkumar-activity-7024615537905152000-wFHN"
+                                            class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a>
+                                    </td>
+                                    <td data-label="description">FOUND COMPLETE WEB NETWORK EXPOSED ON SHODAN WHICH ARE
+                                        VULNERABLE TO DOM-XSS</td>
                                 </tr>
                                 <tr>
                                     <td data-label="Site Name">VISMA</td>
                                     <td data-label="Reward">HALL OF FAME, BOUNTY, INTIGRITI GIFT CARDS & SWAGS</td>
-                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/rajnish-kumar-eh_bughunting-intigriti-bugbounty-activity-7012095970700091393-DyD2" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="Site Name"><a target="_blank"
+                                            href="https://www.linkedin.com/posts/rajnish-kumar-eh_bughunting-intigriti-bugbounty-activity-7012095970700091393-DyD2"
+                                            class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a>
+                                    </td>
                                     <td data-label="description">MASS PII DISCLOSURE & DOM-XSS(x3) </td>
                                 </tr>
                                 <tr>
                                     <td data-label="Site Name">U.S. DEPARTMENT OF HEALTH AND HUMAN SERVICES(HHS)</td>
                                     <td data-label="Reward">HALL OF FAME</td>
-                                    <td data-label="Site Name"><a target="_blank" href="https://www.hhs.gov/vulnerability-disclosure-policy/acknowledgments/index.html" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="Site Name"><a target="_blank"
+                                            href="https://www.hhs.gov/vulnerability-disclosure-policy/acknowledgments/index.html"
+                                            class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a>
+                                    </td>
                                     <td data-label="description">XSS ON U.S. GOVT.</td>
                                 </tr>
                                 <tr>
                                     <td data-label="Site Name">CIMPRESS</td>
                                     <td data-label="Reward">BUG CROWD POINTS</td>
-                                    <td data-label="Site Name"><a target="_blank" href="#" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="Site Name"><a target="_blank" href="#" class="btn"
+                                            onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
                                     <td data-label="description">HTML INJECTION(X4)</td>
                                 </tr>
                                 <tr>
                                     <td data-label="Site Name">SOCIE APP</td>
                                     <td data-label="Reward">SOCIE PLUS VOUCHER WORTH 450€</td>
-                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/rajnish-kumar-eh_securityabrmatters-bugbounty-bughunting-activity-7019991656636518400-zagw" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="Site Name"><a target="_blank"
+                                            href="https://www.linkedin.com/posts/rajnish-kumar-eh_securityabrmatters-bugbounty-bughunting-activity-7019991656636518400-zagw"
+                                            class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a>
+                                    </td>
                                     <td data-label="description">HTML INJECTION</td>
                                 </tr>
                                 <tr>
                                     <td data-label="Site Name">COMODO</td>
                                     <td data-label="Reward">ACKNOWLEDGEMENTS</td>
-                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/rajnish-kumar-eh_bughunting-bug-security-activity-7019547765726666753-6L9U" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="Site Name"><a target="_blank"
+                                            href="https://www.linkedin.com/posts/rajnish-kumar-eh_bughunting-bug-security-activity-7019547765726666753-6L9U"
+                                            class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a>
+                                    </td>
                                     <td data-label="description">HTML INJECTION</td>
                                 </tr>
                                 <tr>
                                     <td data-label="Site Name">HACKTOBERFEST 2022</td>
                                     <td data-label="Reward">BADGES & SWAGS</td>
-                                    <td data-label="Site Name"><a target="_blank" href="#" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="Site Name"><a target="_blank" href="#" class="btn"
+                                            onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
                                     <td data-label="description">HACKTOBERFEST CODING</td>
                                 </tr>
                                 <tr>
                                     <td data-label="Site Name">BINOMO</td>
                                     <td data-label="Reward">BOUNTY</td>
-                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/rajnish-kumar-eh_bugbounty-xss-activity-6974018949269045250-7Nf7" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="Site Name"><a target="_blank"
+                                            href="https://www.linkedin.com/posts/rajnish-kumar-eh_bugbounty-xss-activity-6974018949269045250-7Nf7"
+                                            class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a>
+                                    </td>
                                     <td data-label="description">CLICKJACKING</td>
                                 </tr>
                                 <tr>
                                     <td data-label="Site Name">UNIVERSITY OF COLOGNE</td>
                                     <td data-label="Reward">CERTIFICATE OF APPRECIATION</td>
-                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/rajnish-kumar-eh_securitymatters-bughunting-bugs-activity-6999365054500335616-5-6E" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="Site Name"><a target="_blank"
+                                            href="https://www.linkedin.com/posts/rajnish-kumar-eh_securitymatters-bughunting-bugs-activity-6999365054500335616-5-6E"
+                                            class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a>
+                                    </td>
                                     <td data-label="description">XSS VIA PROTOTYPE POLLUTION #BUG REPORT-2</td>
                                 </tr>
                                 <tr>
                                     <td data-label="Site Name">VMware</td>
                                     <td data-label="Reward">No Reward</td>
-                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/rajnish-kumar-eh_securitymatters-bughunting-bugs-activity-6999365054500335616-5-6E" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
-                                    <td data-label="description">6 REPORTS, NO REWARD FOR LOW SEVERITY HTML INJECTION</td>
+                                    <td data-label="Site Name"><a target="_blank"
+                                            href="https://www.linkedin.com/posts/rajnish-kumar-eh_securitymatters-bughunting-bugs-activity-6999365054500335616-5-6E"
+                                            class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a>
+                                    </td>
+                                    <td data-label="description">6 REPORTS, NO REWARD FOR LOW SEVERITY HTML INJECTION
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td data-label="Site Name">JETBRAINS</td>
                                     <td data-label="Reward">No Reward</td>
-                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/rajnish-kumar-eh_securitymatters-bughunting-bugs-activity-6999365054500335616-5-6E" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="Site Name"><a target="_blank"
+                                            href="https://www.linkedin.com/posts/rajnish-kumar-eh_securitymatters-bughunting-bugs-activity-6999365054500335616-5-6E"
+                                            class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a>
+                                    </td>
                                     <td data-label="description">NO REWARD FOR LOW SEVERITY HTML INJECTION</td>
                                 </tr>
                                 <tr>
-                                    <td data-label="Site Name">MINISTRY OF INFRASTRUCTURE/MARITIME ECONOMY, <b>GOVT. OF POLAND</b></td>
+                                    <td data-label="Site Name">MINISTRY OF INFRASTRUCTURE/MARITIME ECONOMY, <b>GOVT. OF
+                                            POLAND</b></td>
                                     <td data-label="Reward">LETTER OF APPRECIATION</td>
-                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/rajnish-kumar-eh_poland-govt-appreciation-letter-activity-6975066232756580352-Q4Pc/" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="Site Name"><a target="_blank"
+                                            href="https://www.linkedin.com/posts/rajnish-kumar-eh_poland-govt-appreciation-letter-activity-6975066232756580352-Q4Pc/"
+                                            class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a>
+                                    </td>
                                     <td data-label="description">CROSS SITE SCRIPTING (DOM-XSS)</td>
                                 </tr>
                                 <tr>
                                     <td data-label="Site Name">UNIVERSITY OF COLOGNE, GERMANY</td>
                                     <td data-label="Reward">CERTIFICATE OF APPRECIATION</td>
-                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/rajnish-kumar-eh_certificate-rajnish-kumar-dreamer-uoc-activity-6976103581296832512-aG-h/" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="Site Name"><a target="_blank"
+                                            href="https://www.linkedin.com/posts/rajnish-kumar-eh_certificate-rajnish-kumar-dreamer-uoc-activity-6976103581296832512-aG-h/"
+                                            class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a>
+                                    </td>
                                     <td data-label="description">CROSS SITE SCRIPTING (DOM-XSS)</td>
                                 </tr>
                                 <tr>
                                     <td data-label="Site Name">EUROPEAN BIOINFORMATICS INSTITUTE (EMBL-EBI)</td>
                                     <td data-label="Reward">HALL OF FAME</td>
-                                    <td data-label="Site Name"><a target="_blank" href="https://www.ebi.ac.uk/security/hall-of-fame/#:~:text=Rajnish%20Kumar%20(Dreamer)" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="Site Name"><a target="_blank"
+                                            href="https://www.ebi.ac.uk/security/hall-of-fame/#:~:text=Rajnish%20Kumar%20(Dreamer)"
+                                            class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a>
+                                    </td>
                                     <td data-label="description">CROSS SITE SCRIPTING (DOM-XSS)</td>
                                 </tr><!--RAJNISH KUMAR (Dreamer)-->
                                 <tr>
                                     <td data-label="Site Name">N45HT</td>
                                     <td data-label="Reward">HACKERONE THANKS</td>
-                                    <td data-label="Site Name"><a target="_blank" href="https://hackerone.com/n45ht/thanks" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
+                                    <td data-label="Site Name"><a target="_blank"
+                                            href="https://hackerone.com/n45ht/thanks" class="btn"
+                                            onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
                                     <td data-label="description">Thanks For Bussiness Login Error Bug Reports</td>
                                 </tr>
                                 <tr>
                                     <td data-label="Site Name">NCIIPC INDIA</td>
                                     <td data-label="Reward">ACKNOWLEDGEMENTS</td>
-                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/rajnish-kumar-eh_bugreports-india-nation-activity-6863388824836411392-lfe4" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
-                                    <td data-label="description">Acknowledgements For Reporting Various Bugs On Indian Govt. Web Sites</td>
+                                    <td data-label="Site Name"><a target="_blank"
+                                            href="https://www.linkedin.com/posts/rajnish-kumar-eh_bugreports-india-nation-activity-6863388824836411392-lfe4"
+                                            class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a>
+                                    </td>
+                                    <td data-label="description">Acknowledgements For Reporting Various Bugs On Indian
+                                        Govt. Web Sites</td>
                                 </tr>
                                 <tr>
                                     <td data-label="Site Name">CERT-IN INDIA</td>
                                     <td data-label="Reward">ACKNOWLEDGEMENTS</td>
-                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/rajnish-kumar-eh_govtsite-bugreport-bughunting-activity-6963364318407012352-6Ogd" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
-                                    <td data-label="description">Acknowledgements For Reporting Various Incidents & Bugs</td>
+                                    <td data-label="Site Name"><a target="_blank"
+                                            href="https://www.linkedin.com/posts/rajnish-kumar-eh_govtsite-bugreport-bughunting-activity-6963364318407012352-6Ogd"
+                                            class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a>
+                                    </td>
+                                    <td data-label="description">Acknowledgements For Reporting Various Incidents & Bugs
+                                    </td>
                                 </tr>
                                 <tr>
                                     <td data-label="Site Name">CERT-PH | DICT PHILIPPINES</td>
                                     <td data-label="Reward">ACKNOWLEDGEMENTS</td>
-                                    <td data-label="Site Name"><a target="_blank" href="https://www.linkedin.com/posts/rajnish-kumar-eh_bughunting-security-secured-activity-6879258690747289600-zL4P" class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a></td>
-                                    <td data-label="description">Acknowledgements For Reporting Various Bugs On Philippines Govt. Web Sites</td>
+                                    <td data-label="Site Name"><a target="_blank"
+                                            href="https://www.linkedin.com/posts/rajnish-kumar-eh_bughunting-security-secured-activity-6879258690747289600-zL4P"
+                                            class="btn" onmouseover="bleep.play()" onclick="whistle.play()">Link</a>
+                                    </td>
+                                    <td data-label="description">Acknowledgements For Reporting Various Bugs On
+                                        Philippines Govt. Web Sites</td>
                                 </tr>
                             </tbody>
                         </table>
@@ -567,12 +872,12 @@
 
                 </div>
 
-                                        
-            </div>
-        </section>  
 
-        <!--Service Section End-->
-        <!--Portfolio Section-->
+        </div>
+        </section>
+
+        <!--Achivements Section End-->
+        <!--Certifications Section-->
         <section class="portfolio section" id="portfolio">
             <div class="container">
                 <div class="row">
@@ -583,29 +888,29 @@
                 <div class="row">
                     <div class="section-title padd-15">
                         <h2>BADGES</h2>
-                    </div>                
-                <!-- Start Portfolio item -->
-                <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
-                    <div class="row">
-                        <img src="./images/CEH-Practical-Logo.png" alt="CEH|_certificate" height="50%" width="50%">
                     </div>
-                </div>
-                <!-- End Portfolio item -->
-                <!-- Start Portfolio item -->
-                <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
-                    <div class="row">
-                        <img src="./images/logoewptxv2.png" alt="ewptxv2_certificate" height="60%" width="60%">
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="row">
+                            <img src="./images/CEH-Practical-Logo.png" alt="CEH|_certificate" height="50%" width="50%">
+                        </div>
                     </div>
-                </div>
-                <!-- End Portfolio item -->
-                <!-- Start Portfolio item -->
-                <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
-                    <div class="row">
-                        <img src="./images/cap.png" alt="cap_certificate" height="49%" width="49%">
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="row">
+                            <img src="./images/logoewptxv2.png" alt="ewptxv2_certificate" height="60%" width="60%">
+                        </div>
                     </div>
+                    <!-- End Portfolio item -->
+                    <!-- Start Portfolio item -->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <div class="row">
+                            <img src="./images/cap.png" alt="cap_certificate" height="49%" width="49%">
+                        </div>
+                    </div>
+                    <!-- End Portfolio item -->
                 </div>
-                <!-- End Portfolio item -->
-            </div>
                 <div class="row">
                     <div class="portfolio-filter padd-15">
                         <!--
@@ -616,7 +921,7 @@
                         -->
                     </div>
                 </div>
-                
+
                 <div class="row">
                     <div class="section-title padd-15">
                         <h2>CERTIFICATIONS</h2>
@@ -632,7 +937,8 @@
                             <div class="portfolio-info">
                                 <h4>By EC-Council</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div><!--RAJNISH KUMAR(Dreamer)-->
+                                    <i class="fa fa-search"></i>
+                                </div><!--RAJNISH KUMAR(Dreamer)-->
                             </div>
                         </div>
                     </div>
@@ -646,7 +952,8 @@
                             <div class="portfolio-info">
                                 <h4>By eLearnSecurity</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div><!--RAJNISH KUMAR(Dreamer)-->
+                                    <i class="fa fa-search"></i>
+                                </div><!--RAJNISH KUMAR(Dreamer)-->
                             </div>
                         </div>
                     </div>
@@ -660,7 +967,8 @@
                             <div class="portfolio-info">
                                 <h4>By The SecOps Group</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div><!--RAJNISH KUMAR(Dreamer)-->
+                                    <i class="fa fa-search"></i>
+                                </div><!--RAJNISH KUMAR(Dreamer)-->
                             </div>
                         </div>
                     </div>
@@ -674,7 +982,8 @@
                             <div class="portfolio-info">
                                 <h4>By EC-Council Codered</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div><!--RAJNISH KUMAR(Dreamer)-->
+                                    <i class="fa fa-search"></i>
+                                </div><!--RAJNISH KUMAR(Dreamer)-->
                             </div>
                         </div>
                     </div>
@@ -688,7 +997,8 @@
                             <div class="portfolio-info">
                                 <h4>BY FORTINET NSE</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -702,7 +1012,8 @@
                             <div class="portfolio-info">
                                 <h4>BY FORTINET NSE</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -716,7 +1027,8 @@
                             <div class="portfolio-info">
                                 <h4>BY TRYHACKME</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -730,7 +1042,8 @@
                             <div class="portfolio-info">
                                 <h4>BY TRYHACKME</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -744,7 +1057,8 @@
                             <div class="portfolio-info">
                                 <h4>BY TRYHACKME</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -758,7 +1072,8 @@
                             <div class="portfolio-info">
                                 <h4>BY TRYHACKME</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -772,7 +1087,8 @@
                             <div class="portfolio-info">
                                 <h4>BY TRYHACKME</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -786,7 +1102,8 @@
                             <div class="portfolio-info">
                                 <h4>BY TRYHACKME</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -800,7 +1117,8 @@
                             <div class="portfolio-info">
                                 <h4>BY TRYHACKME</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -814,7 +1132,8 @@
                             <div class="portfolio-info">
                                 <h4>BY TRYHACKME</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -828,7 +1147,8 @@
                             <div class="portfolio-info">
                                 <h4>BY CSI LINUX</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -842,7 +1162,8 @@
                             <div class="portfolio-info">
                                 <h4>BY CSI LINUX</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -856,7 +1177,8 @@
                             <div class="portfolio-info">
                                 <h4>BY SKILLFRONT</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -870,7 +1192,8 @@
                             <div class="portfolio-info">
                                 <h4>BY CODERED</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -884,13 +1207,15 @@
                             <div class="portfolio-info">
                                 <h4>BY CODERED</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- End Portfolio item -->
                     <!-- Start Portfolio item -->
-                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()"><!--RAJNISH KUMAR (Dreamer)-->
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                        <!--RAJNISH KUMAR (Dreamer)-->
                         <div class="portfolio-item-inner shadow-dark">
                             <div class="portfolio-img">
                                 <img src="./images/udemy1.jpg" alt="portfolio">
@@ -898,7 +1223,8 @@
                             <div class="portfolio-info">
                                 <h4>BY UDEMY</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -912,7 +1238,8 @@
                             <div class="portfolio-info">
                                 <h4>BY UDEMY</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -926,7 +1253,8 @@
                             <div class="portfolio-info">
                                 <h4>BY UDEMY</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -940,7 +1268,8 @@
                             <div class="portfolio-info">
                                 <h4>BY CISCO</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -954,7 +1283,8 @@
                             <div class="portfolio-info">
                                 <h4>BY CISCO</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -968,13 +1298,14 @@
                             <div class="portfolio-info">
                                 <h4>BY SKILLFRONT</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <!-- End Portfolio item -->
                     <!-- Start Portfolio item -->
-                      <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                    <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
                         <div class="portfolio-item-inner shadow-dark">
                             <div class="portfolio-img">
                                 <img src="./images/google.jpg" alt="portfolio">
@@ -982,7 +1313,8 @@
                             <div class="portfolio-info">
                                 <h4>BY SKILLFRONT</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -996,7 +1328,8 @@
                             <div class="portfolio-info">
                                 <h4>BY HACKING FLIX</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1015,7 +1348,8 @@
                             <div class="portfolio-info">
                                 <h4>BY REDTEAM HACKER ACADEMY</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1029,7 +1363,8 @@
                             <div class="portfolio-info">
                                 <h4>BY ISTE</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1043,7 +1378,8 @@
                             <div class="portfolio-info">
                                 <h4>By ISTE</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1057,7 +1393,8 @@
                             <div class="portfolio-info">
                                 <h4>BY KVCH</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1071,7 +1408,8 @@
                             <div class="portfolio-info">
                                 <h4>BY KVCH</h4>
                                 <div class="icon"><!--RAJNISH KUMAR (Dreamer)-->
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1085,7 +1423,8 @@
                             <div class="portfolio-info">
                                 <h4>BY ANT WAK</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1099,7 +1438,8 @@
                             <div class="portfolio-info">
                                 <h4>BY ANT WAK</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1113,7 +1453,8 @@
                             <div class="portfolio-info">
                                 <h4>BY ANT WAK</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1127,7 +1468,8 @@
                             <div class="portfolio-info">
                                 <h4>BY ANT WAK</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1141,7 +1483,8 @@
                             <div class="portfolio-info">
                                 <h4>BY ANT WAK</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1155,7 +1498,8 @@
                             <div class="portfolio-info">
                                 <h4>BY ANT WAK</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1169,7 +1513,8 @@
                             <div class="portfolio-info">
                                 <h4>BY CODING BLOCKS</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1183,7 +1528,8 @@
                             <div class="portfolio-info">
                                 <h4>BY CODING BLOCKS</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1197,7 +1543,8 @@
                             <div class="portfolio-info">
                                 <h4>BY CODING BLOCKS</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1211,7 +1558,8 @@
                             <div class="portfolio-info">
                                 <h4>BY CODING BLOCKS</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1225,7 +1573,8 @@
                             <div class="portfolio-info">
                                 <h4>BY CODING BLOCKS</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1239,7 +1588,8 @@
                             <div class="portfolio-info">
                                 <h4>BY CODING BLOCKS</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1253,7 +1603,8 @@
                             <div class="portfolio-info">
                                 <h4>BY CODING BLOCKS</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1267,7 +1618,8 @@
                             <div class="portfolio-info">
                                 <h4>BY CODING BLOCKS</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1281,7 +1633,8 @@
                             <div class="portfolio-info">
                                 <h4>BY CODING BLOCKS</h4>
                                 <div class="icon">
-                                    <i class="fa fa-search"></i> </div>
+                                    <i class="fa fa-search"></i>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1291,7 +1644,7 @@
                             <h2>INTERNSHIPS / VOLUNTEERSHIPS</h2>
                         </div>
                     </div>
-                   <div class="row">
+                    <div class="row">
                         <div class="portfolio-filter padd-15">
                             <!--
                             <button type="button" class="active" data-filter="all">All</button>
@@ -1311,220 +1664,307 @@
                                 <div class="portfolio-info">
                                     <h4>BY CFB</h4>
                                     <div class="icon">
-                                        <i class="fa fa-search"></i> </div>
+                                        <i class="fa fa-search"></i>
+                                    </div>
                                 </div>
                             </div>
                         </div>
                         <!-- End Portfolio item -->
-                            <!-- Start Portfolio item -->
-                            <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
-                                <div class="portfolio-item-inner shadow-dark">
-                                    <div class="portfolio-img">
-                                        <img src="./images/cs.png" alt="isea_certificate">
-                                    </div>
-                                    <div class="portfolio-info">
-                                        <h4>BY CFB</h4>
-                                        <div class="icon">
-                                            <i class="fa fa-search"></i> </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Portfolio item -->
-                            <!-- Start Portfolio item -->
-                            <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
-                                <div class="portfolio-item-inner shadow-dark">
-                                    <div class="portfolio-img">
-                                        <img src="./images/wst.png" alt="isea_certificate">
-                                    </div>
-                                    <div class="portfolio-info">
-                                        <h4>BY CFB</h4>
-                                        <div class="icon">
-                                            <i class="fa fa-search"></i> </div>
-                                    </div><!--RAJNISH KUMAR (Dreamer)-->
-                                </div>
-                            </div>
-                            <!-- End Portfolio item -->
                         <!-- Start Portfolio item -->
-                            <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
-                                <div class="portfolio-item-inner shadow-dark">
-                                    <div class="portfolio-img">
-                                        <img src="./images/ti.png" alt="isea_certificate">
-                                    </div>
-                                    <div class="portfolio-info">
-                                        <h4>BY CFB</h4>
-                                        <div class="icon">
-                                            <i class="fa fa-search"></i> </div>
+                        <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="./images/cs.png" alt="isea_certificate">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>BY CFB</h4>
+                                    <div class="icon">
+                                        <i class="fa fa-search"></i>
                                     </div>
                                 </div>
                             </div>
-                            <!-- End Portfolio item -->
-                            <!-- Start Portfolio item -->
-                            <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
-                                <div class="portfolio-item-inner shadow-dark">
-                                    <div class="portfolio-img">
-                                        <img src="./images/wd.png" alt="isea_certificate">
-                                    </div>
-                                    <div class="portfolio-info">
-                                        <h4>BY CFB</h4>
-                                        <div class="icon">
-                                            <i class="fa fa-search"></i> </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Portfolio item -->
-                    <div class="row">
-                        <div class="section-title padd-15">
-                            <h2>LETTER OF RECOMMENDATIONS</h2>
                         </div>
+                        <!-- End Portfolio item -->
+                        <!-- Start Portfolio item -->
+                        <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="./images/wst.png" alt="isea_certificate">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>BY CFB</h4>
+                                    <div class="icon">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </div><!--RAJNISH KUMAR (Dreamer)-->
+                            </div>
+                        </div>
+                        <!-- End Portfolio item -->
+                        <!-- Start Portfolio item -->
+                        <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="./images/ti.png" alt="isea_certificate">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>BY CFB</h4>
+                                    <div class="icon">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Portfolio item -->
+                        <!-- Start Portfolio item -->
+                        <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="./images/wd.png" alt="isea_certificate">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>BY CFB</h4>
+                                    <div class="icon">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Portfolio item -->
+                        <div class="row">
+                            <div class="section-title padd-15">
+                                <h2>LETTER OF RECOMMENDATIONS</h2>
+                            </div>
+                        </div><!--RAJNISH KUMAR (Dreamer)-->
+                        <!-- Start Portfolio item -->
+                        <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="./images/LOR (1).png" alt="isea_certificate">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>BY CFB</h4>
+                                    <div class="icon">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Portfolio item -->
+                        <!-- Start Portfolio item -->
+                        <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="./images/LOR (2).png" alt="isea_certificate">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>BY CFB</h4>
+                                    <div class="icon">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Portfolio item -->
+                        <!-- Start Portfolio item -->
+                        <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="./images/LOR (3).png" alt="isea_certificate">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>BY CFB</h4>
+                                    <div class="icon">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Portfolio item -->
+                        <!-- Start Portfolio item -->
+                        <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
+                            <div class="portfolio-item-inner shadow-dark">
+                                <div class="portfolio-img">
+                                    <img src="./images/LOR (4).png" alt="isea_certificate">
+                                </div>
+                                <div class="portfolio-info">
+                                    <h4>BY CFB</h4>
+                                    <div class="icon">
+                                        <i class="fa fa-search"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- End Portfolio item -->
                     </div><!--RAJNISH KUMAR (Dreamer)-->
-                            <!-- Start Portfolio item -->
-                            <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
-                                <div class="portfolio-item-inner shadow-dark">
-                                    <div class="portfolio-img">
-                                        <img src="./images/LOR (1).png" alt="isea_certificate">
-                                    </div>
-                                    <div class="portfolio-info">
-                                        <h4>BY CFB</h4>
-                                        <div class="icon">
-                                            <i class="fa fa-search"></i> </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Portfolio item -->
-                            <!-- Start Portfolio item -->
-                            <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
-                                <div class="portfolio-item-inner shadow-dark">
-                                    <div class="portfolio-img">
-                                        <img src="./images/LOR (2).png" alt="isea_certificate">
-                                    </div>
-                                    <div class="portfolio-info">
-                                        <h4>BY CFB</h4>
-                                        <div class="icon">
-                                            <i class="fa fa-search"></i> </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Portfolio item -->
-                            <!-- Start Portfolio item -->
-                            <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
-                                <div class="portfolio-item-inner shadow-dark">
-                                    <div class="portfolio-img">
-                                        <img src="./images/LOR (3).png" alt="isea_certificate">
-                                    </div>
-                                    <div class="portfolio-info">
-                                        <h4>BY CFB</h4>
-                                        <div class="icon">
-                                            <i class="fa fa-search"></i> </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Portfolio item -->
-                            <!-- Start Portfolio item -->
-                            <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
-                                <div class="portfolio-item-inner shadow-dark">
-                                    <div class="portfolio-img">
-                                        <img src="./images/LOR (4).png" alt="isea_certificate">
-                                    </div>
-                                    <div class="portfolio-info">
-                                        <h4>BY CFB</h4>
-                                        <div class="icon">
-                                            <i class="fa fa-search"></i> </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Portfolio item -->
-                </div><!--RAJNISH KUMAR (Dreamer)-->
 
-            </div>
+                </div>
         </section>
-        <!--EMBEDS Section-->
-        <section class="portfolio section" id="contents">
+        <!--CERTIFICATIONS ENDS-->
+
+        <!--COURSES Section-->
+        <section class="Courses section" id="courses">
             <div class="container">
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>HACKED ADOBE</h2>
-                    </div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/wKvDkSsZrnE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div><br><br>
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>HACKED HITACHI</h2>
-                    </div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/evDsE1pySbc" title="YouTube video player" frameborder="10" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-                </div><br><br>
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>HACKED VISMA</h2>
-                    </div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VTBngPjWr1I" title="YouTube video player" frameborder="0" disallow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div><br><br>
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>BUSINESS LOGIC ERROR</h2>
-                    </div>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/yJK9NJMiDhk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                </div><br><br>
-                <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>PROJECT OMNITRIX</h2>
-                    </div>
-                    <iframe src="https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6881525303278211072?compact=1" height="349" width="660" frameborder="0" allowfullscreen="" title="Embedded post"></iframe>
-                </div><br><br>
-                
-                
-                 <!--   <div class="row portfolio-items">RAJNISH KUMAR (Dreamer)-->
-                        <!-- Start Portfolio item -->
-                     <!--   <div class="portfolio-item padd-15" data-category="web-design" onclick="whistle.play()">
-                            <div class="row">
-                                <div class="section-title padd-15">
-                                    <h2>LINKEDIN</h2>
-                                </div>
-                            </div>
-                            <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-                            <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="medium" data-theme="dark" data-type="HORIZONTAL" data-vanity="rajnish-kumar-eh" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/rajnish-kumar-eh?trk=profile-badge"></a></div>
-                        </div>
-                        End Portfolio item -->
-                
-                        
-                    
-                    </div>
-                    
-                
+                <div class="intro">
+                    <center>
+                        <h1><span style="color: red;">CYBER</span><span style="color: blue;">XIELD</span></h1>
+                    </center>
+                    <center>
+                        <div class="relue"><h4>PRESENTS</h4></div><br>
+                    </center>
+                    <center>
+                        <h3  style="color: red;"><div class="blink_me">&#128308; LIVE COURSE</div></h3></center>
+                    <center><h1 style=" color: rgb(255, 157, 0);font-weight: bold;">CYBER SECURITY & ETHICAL HACKING
+                            COURSE<BR>- BEGINNER TO ADVANCE</h1>
+                    </center>
+                    <p><Strong>BATCH (1) STARTS AT OCT 01, 2023</Strong></p>
+                    <br>
+                    <h2 style="color: red;"><strong>MENTOR: MR. RAJNISH KUMAR</strong></h2>
+                    <p>A CERTIFIED INDUSTRY EXPERT, CERTIFIED AS CEH, eWPTXv2, CAP, NSE 1, NSE 2</p><br>
+                    <H3 style="color: rgb(255, 157, 0);font-weight: bold;text-decoration: line-through;"> COURSE PRICE:
+                        &#8377; 5000/- </h3>
+                    <H3 style="color: red;">OFFER PRICE: &#8377; 3000/- (-40% OFF)</h3><br>
+                    <br>
+                </div>
+
+                <div class="buttons padd-15">
+                    <CENTER><a href="/docs/course_details.pdf" target="_blank" class="btn"
+                            onclick="button.play()">BASIC COURSE DETAILS</a></CENTER>
+                </div>
+                <div>
+                    <center>
+                        <p style="font-size: xx-large;color: red;">⇩</p>
+                    </center>
+                </div>
+                <div class="buttons padd-15">
+                    <CENTER><a href="https://bit.ly/cyberxield-register" target="_blank" class="btn"
+                            onclick="button.play()">REGISTER YOURSELF NOW</a></CENTER>
+                </div><br>
+                <div>
+                    <br>
+                    <center>
+                        <p><strong><div class="relue">👉 Ask Your Query In Mail 👈</div></strong></p>
+                    </center>
+                    <center>
+                        <p><strong><a href="mailto:support@cyberxield.in" class="btn">support@cyberxield.in</a></strong>
+                        </p>
+                    </center>
+                    <br>
+                    <center>
+                        <p style="color:red;font-size:12px;"><strong><a href="/docs/termsandconditions.pdf"
+                                    target="_blank">TERMS AND CONDITIONS (T&Cs)</a> || <a
+                                    href="/docs/privacy_policy.pdf" target="_blank">PRIVACY POLICY</a></strong></p>
+                    </center>
                 </div>
             </div>
-        </section>               
-        <!--Contact Section-->
-        <section class="contact section" id="contact">
-                <div class="container">
-                    <div class="row">
-                    <div class="section-title padd-15">
-                        <h2>Contact Me</h2>
-                    </div>
-                    </div>
-                <div class="row">
-                    <!--Contact info item-->
-                    <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa fa-whatsapp"></i></div>
-                        <h4>WhatsApp Me On</h4>
-                        <p><a href="https://wa.me/message/5FCTHDC4VX2RO1"><strong>Click Here To Message</strong></a></strong></p>
-                    </div>
-                    <!--Contact info item End-->
-                    <!--Contact info item-->
-                    <!--<div class="contact-info-item padd-15">
+            <div>
+                <br><br>
+                <center>
+                    <h1 style="color: blueviolet">COURSE CONTENTS</h1>
+                </center><br>
+                <h3 style="color: blue;"><strong>PHASE 1: BASICS OF HACKING</strong></h3>
+                <ol style="color: red;font-weight: bold;">
+                    <li><b>Introduction To Ethical Hacking</b></li>
+                    <li>How To Develop An Ethical Mindset?</li>
+                    <li>Hacking Setup & Installations</li>
+                    <li>Basic Linux Commands</li>
+                    <li>Basic of Networking</li><br>
+                    <h3 style="color: blue;"><strong>PHASE 2: VULNERABILITY ASSESSMENT</strong></h3>
+                    <li>Creating Secure Hacking Environment</li>
+                    <li>Foot Printing & Reconnaissance</li>
+                    <li>Scanning + Detailed NMAP</li>
+                    <li>Enumeration</li>
+                    <li>Vulnerability Analysis</li><br>
+                    <h3 style="color: blue;"><strong>PHASE 3: GAINING SYSTEM ACCESS</strong></h3>
+                    <li>Anonimity</li>
+                    <li>Hacking of Systems</li>
+                    <li>Malwares & Threats</li>
+                    <li>Sniffing & Spoofing</li>
+                    <li>Deep Social Engineering</li>
+                    <li>Denial-of-Service</li><br>
+                    <h3 style="color: blue;"><strong>PHASE 4: WEBSITE BUG HUNTINGS</strong></h3>
+                    <li>Session Hijacking</li>
+                    <li>Evading IDS, Firewalls, and Honeypots</li>
+                    <li>Hacking Web Servers</li>
+                    <li>Hacking Web Applications</li>
+                    <li>SQL Injection</li>
+                    <li>Writing Pen-Testing Reports (with/without GPTs)</li><br>
+                    <h3 style="color: blue;"><strong>PHASE 5: HACK THE MOBILE, IoT & OT</strong></h3>
+                    <li>Hacking Of Wireless Networks</li>
+                    <li>Hacking Of Mobile Platforms</li>
+                    <li>IoT & OT Hacking</li>
+                    <li>Cloud Computing & Pen-Testing</li>
+                    <li>The Final Theory of Cryptography</li>
+                    <li>Testing Using Different Frameworks</li>
+                    <br>
+                    <h2 style="color: red;font-weight: bold;">
+                        <center>CAREER TALKS</center>
+                    </h2>
+                    <h5 style="color: red;font-weight: bold;">
+                        <center>◆-•X•-•X•-•X•-◆</center>
+                    </h5>
+                    <hr>
+                </ol>
+            </div>
+        </section>
+        <!--COURSES Section End-->
+
+
+
+    <!--Contact Section-->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="section-title padd-15">
+                    <h2>Contact Me</h2>
+                </div>
+            </div>
+            <div class="row">
+                <!--Contact info item-->
+                <div class="contact-info-item padd-15">
+                    <div class="icon"><i class="fa fa-envelope"></i></div>
+                    <h4>Email For Any Query</h4>
+                    <p><a href="mailto:contactdreamer@duck.com"><strong>contactdreamer@duck.com</strong></a></p>
+                </div>
+                <div class="contact-info-item padd-15">
+                    <div class="icon"><i class="fa fa-envelope"></i></div>
+                    <h4>Email For CyberXield Trainings / VAPT Projects</h4>
+                    <p><a href="mailto:support@cyberxield.in"><strong>support@cyberxield.in</strong></a></p>
+                </div>
+                <div class="contact-info-item padd-15">
+                    <div class="icon"><i class="fa fa-whatsapp"></i></div>
+                    <h4>WhatsApp Me</h4>
+                    <p><a href="https://wa.me/message/5FCTHDC4VX2RO1" target="_blank"><strong>Click Here To
+                                Message</strong></a></strong></p>
+                </div>
+                <div class="contact-info-item padd-15">
+                    <div class="icon"><i class="fa fa-instagram"></i></div>
+                    <h4>Get In Touch On Insta</h4>
+                    <p><a href="https://www.instagram.com/i_eh_dreamer/" target="_blank"><strong>Hey Here I
+                                Am...</strong></a></strong></p>
+                </div>
+                <!--Contact info item End-->
+                <!--Contact info item-->
+                <!--<div class="contact-info-item padd-15">
                         <div class="icon"><i class="fa fa-map-marker"></i></div>
                         <h4>Address</h4>
                         <p>Arya Nagar Street No 2, Morar <Gwalior</p>
                     </div>-->
-                    <!--Contact info item End-->
-                    <!--Contact info item-->
-                    <div class="contact-info-item padd-15">
-                        <div class="icon"><i class="fa fa-envelope"></i></div>
-                        <h4>Email</h4>
-                        <p><a href="mailto:contactdreamer@duck.com"><strong>contactdreamer@duck.com</strong></a></p>
-                    </div>
-                    <!--Contact info item End-->
-                 </div><!--RAJNISH KUMAR (Dreamer)-->
-                    
+                <!--Contact info item End-->
+                <!--Contact info item-->
+                <div class="contact-info-item padd-15">
+                    <div class="icon"><i class="fa-brands fa-threads"></i></div>
+                    <h4>Get In Touch On Threads</h4>
+                    <p><a href="https://www.threads.net/@i_eh_dreamer" target="_blank"><strong>Catch The
+                                Threads...</strong></a></p>
+                </div>
+                <div class="contact-info-item padd-15">
+                    <div class="icon"><i class="fa-brands fa-x-twitter"></i></div>
+                    <h4>Get In Touch On X</h4>
+                    <p><a href="https://x.com/i_eh_dreamer/" target="_blank"><strong>Click Me On X...</strong></a></p>
+                </div>
+                <!--Contact info item End-->
+            </div><!--RAJNISH KUMAR (Dreamer)-->
+            <!--                    
                     <div class="row">
                         <form class="contact-form padd-15">
                             <div class="row">
@@ -1559,65 +1999,73 @@
                                 </div>
                             </div>
                             
-                        </form><!--RAJNISH KUMAR (Dreamer)-->
-                    </div>
-                    <!--Contact Form End-->
-                
-                </div> 
-        </section>       
-        <!--Contact Section End-->
+                        </form>
+                    </div>-->
+
+            <!--Contact Form End-->
+
+        </div>
+    </section>
+    <!--Contact Section End-->
     </div>
     <!--Main content end-->
-</div>
-<!--Main Container-->
+    </div>
+    <!--Main Container-->
 
-<!--LightBox-->
-<div class="lightbox ">
-    <div class="lightbox-content">
-        <div class="lightbox-close">&times;</div>
-        <img src="./images/snake.gif" class="lightbox-img" onclick="nextItem()">
-        <div class="lightbox-caption">
-            <div class="caption-text"></div>
-            <div class="caption-counter"></div>
+    <!--LightBox-->
+    <div class="lightbox ">
+        <div class="lightbox-content">
+            <div class="lightbox-close">&times;</div>
+            <img src="./images/snake.gif" class="lightbox-img" onclick="nextItem()">
+            <div class="lightbox-caption">
+                <div class="caption-text"></div>
+                <div class="caption-counter"></div>
+            </div>
+
         </div>
-
+        <div class="lightbox-controls">
+            <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
+            <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
+        </div>
     </div>
-    <div class="lightbox-controls">
-        <div class="prev-item" onclick="prevItem()"><i class="fa fa-angle-left"></i></div>
-        <div class="next-item" onclick="nextItem()"><i class="fa fa-angle-right"></i></div>
+    <!--LightBox End-->
+
+    <!--Live Stle Switcher-->
+    <div class="style-switcher">
+        <div class="toggle-style-switcher" onclick="bleep.play()">
+            <i class="fa fa-cog fa-spin" onclick="bleep.play()"></i>
+        </div>
+        <h5>Style Switcher</h5>
+        <ul><!--RAJNISH KUMAR (Dreamer)-->
+            <li><a href="javascript:void(0);" title="pink" style="background-color: #fe0000;"
+                    onclick="setActiveStyle('red')"></a></li>
+            <li><a href="javascript:void(0);" title="blue" style="background-color: #2196f3;"
+                    onclick="setActiveStyle('blue')"></a></li>
+            <li><a href="javascript:void(0);" title="green" style="background-color: #72b626;"
+                    onclick="setActiveStyle('green')"></a></li>
+            <li><a href="javascript:void(0);" title="orange" style="background-color: #fa5b07;"
+                    onclick="setActiveStyle('orange')"></a></li>
+            <li><a href="javascript:void(0);" title="yellow" style="background-color: #ffb400;"
+                    onclick="setActiveStyle('yellow')"></a></li>
+        </ul>
+        <h5>Body Skin</h5>
+        <label>
+            <input type="radio" class="body-skin" name="body-style" value="light" checked="true"
+                onclick="whistle.play()">
+            Light
+        </label>
+        <label>
+            <input type="radio" class="body-skin" name="body-style" value="dark" onclick="whistle.play()">
+            Dark
+        </label>
     </div>
-</div>
-<!--LightBox End-->
 
-<!--Live Stle Switcher-->
-<div class="style-switcher">
-    <div class="toggle-style-switcher" onclick="bleep.play()">
-        <i class="fa fa-cog fa-spin" onclick="bleep.play()"></i>
-    </div>    
-    <h5>Style Switcher</h5>
-    <ul><!--RAJNISH KUMAR (Dreamer)-->
-        <li><a href="javascript:void(0);" title="pink" style="background-color: #fe0000;" onclick="setActiveStyle('red')"></a></li>
-        <li><a href="javascript:void(0);" title="blue" style="background-color: #2196f3;" onclick="setActiveStyle('blue')"></a></li>
-        <li><a href="javascript:void(0);" title="green" style="background-color: #72b626;" onclick="setActiveStyle('green')"></a></li>
-        <li><a href="javascript:void(0);" title="orange" style="background-color: #fa5b07;" onclick="setActiveStyle('orange')"></a></li>
-        <li><a href="javascript:void(0);" title="yellow" style="background-color: #ffb400;" onclick="setActiveStyle('yellow')"></a></li>
-    </ul>
-    <h5>Body Skin</h5>
-    <label>
-        <input type="radio" class="body-skin" name="body-style" value="light" checked="true" onclick="whistle.play()">
-        Light
-    </label>
-    <label>
-        <input type="radio" class="body-skin" name="body-style" value="dark" onclick="whistle.play()">
-        Dark
-    </label>
-</div>
+    <!--Live Style Switcher End here-->
 
-<!--Live Style Switcher End here-->
-
-<script src="js/script.js"></script>
-<script src="./js/styleSwitcher.js"></script>
+    <script src="js/script.js"></script>
+    <script src="./js/styleSwitcher.js"></script>
 
 </body>
+
 </html>
 <!--RAJNISH KUMAR (Dreamer)-->
